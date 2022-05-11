@@ -1,0 +1,50 @@
+id: keyValue1
+type: widget
+subtype: KeyValueMapWidget
+template:
+  ordered:
+    - rowHeaderNames:
+        ordered: []
+    - rowFormats:
+        ordered: []
+    - valueTitle: Value
+    - data: '{{ query1.data.args}}'
+    - prevRowMappers:
+        ordered: []
+    - rowMappersRenderAsHTML:
+        ordered: []
+    - rowVisibility:
+        ordered:
+          - a: true
+          - b: true
+          - c: true
+          - k1: true
+          - origin: true
+          - headers: true
+          - k2: true
+          - k3: true
+          - url: true
+          - args: true
+    - prevRowFormats:
+        ordered: []
+    - rowMappers:
+        ordered: []
+    - rows:
+        - a
+        - b
+        - c
+        - args
+        - headers
+        - origin
+        - url
+        - k1
+        - k2
+        - k3
+    - keyTitle: Key
+style:
+  ordered: []
+position2:
+  position2:
+    height: 5
+    width: 2
+createdAt: 2022-04-21T17:53:34.133Z

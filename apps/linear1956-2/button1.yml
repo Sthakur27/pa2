@@ -8,8 +8,7 @@ template:
     - iconAfter: ''
     - submitTargetId: null
     - hidden: false
-    - text: |
-        DELME
+    - text: Button
     - showInEditor: false
     - tooltipText: ''
     - styleVariant: solid
@@ -25,7 +24,8 @@ style:
   ordered: []
 position2:
   position2:
+    row: 2.2
     col: 2
     height: 1
     width: 3
-createdAt: 2022-04-28T06:26:10.564Z
+createdAt: 2022-05-12T23:21:09.418Z

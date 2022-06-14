@@ -1,0 +1,21 @@
+id: select1
+type: widget
+subtype: RNSelectWidget
+template:
+  ordered:
+    - events:
+        ordered: []
+    - label: Label
+    - labels: '[''Foo'', ''Bar'', ''Baz'']'
+    - value: foo
+    - values: '[''foo'', ''bar'', ''baz'']'
+    - labelPosition: top
+style:
+  ordered: []
+position2:
+  position2: {}
+mobileAppPosition:
+  mobilePosition:
+    ordinal: 2
+createdAt: 2022-06-14T23:26:58.240Z
+screen: screen1

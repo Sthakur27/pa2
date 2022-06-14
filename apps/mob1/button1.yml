@@ -5,7 +5,8 @@ template:
   ordered:
     - events:
         ordered: []
-    - text: Button
+    - text: |
+        Button2
     - size: large
     - width: full
 style:

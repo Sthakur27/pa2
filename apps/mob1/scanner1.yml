@@ -1,13 +1,15 @@
-id: button1
+id: scanner1
 type: widget
-subtype: RNButtonWidget
+subtype: RNScannerWidget
 template:
   ordered:
     - events:
         ordered: []
-    - text: |
-        Button3
-    - size: large
+    - opened: false
+    - data: []
+    - buttonText: Scanner
+    - buttonSize: large
+    - autoClose: true
     - width: full
 style:
   ordered: []
@@ -16,6 +18,6 @@ position2:
     row: -.inf
 mobileAppPosition:
   mobilePosition:
-    ordinal: 1
-createdAt: 2022-06-14T22:04:19.775Z
+    ordinal: 3
+createdAt: 2022-06-14T23:29:46.069Z
 screen: screen1

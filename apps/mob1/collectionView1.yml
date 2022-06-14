@@ -53,7 +53,8 @@ template:
     - prefixValueByIndex: 'false'
     - suffixTextByIndex: text
 position2:
-  position2: {}
+  position2:
+    row: -.inf
 mobileAppPosition:
   object:
     ordinal: 0

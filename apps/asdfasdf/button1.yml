@@ -9,7 +9,7 @@ template:
     - submitTargetId: null
     - hidden: false
     - text: |
-        SIDDEBUG
+        SIDDEBUG2
     - showInEditor: false
     - tooltipText: ''
     - styleVariant: solid

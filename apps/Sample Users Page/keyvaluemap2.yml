@@ -1,0 +1,43 @@
+id: keyvaluemap2
+type: widget
+subtype: KeyValueMapWidget
+template:
+  ordered:
+    - rowHeaderNames:
+        ordered: []
+    - rowFormats:
+        ordered: []
+    - valueTitle: ''
+    - data: '{{ table1.selectedRow.data.company}}'
+    - prevRowMappers:
+        ordered: []
+    - rowMappersRenderAsHTML:
+        ordered: []
+    - rowVisibility:
+        ordered:
+          - a: true
+          - b: true
+          - c: true
+          - name: true
+          - catchPhrase: true
+          - bs: true
+    - prevRowFormats:
+        ordered: []
+    - rowMappers:
+        ordered: []
+    - rows:
+        - a
+        - b
+        - c
+        - name
+        - catchPhrase
+        - bs
+    - keyTitle: Company
+position2:
+  position2:
+    container: container3
+    row: 8
+    height: 4
+    width: 12
+tabIndex: 22
+createdAt: 2020-11-10T02:28:24.498Z

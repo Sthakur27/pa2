@@ -1,0 +1,19 @@
+id: container2
+type: widget
+subtype: ContainerWidget
+template:
+  ordered:
+    - title: ''
+    - disabled: ''
+    - spinWhenChildrenAreFetching: true
+    - showBorder: true
+    - showDropShadow: true
+    - backgroundColor: white
+    - scroll: false
+position2:
+  position2:
+    row: 5
+    height: 39
+    width: 12
+tabIndex: 12
+createdAt: 2020-11-10T02:28:24.497Z

@@ -1,0 +1,23 @@
+id: text12
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - truncateOverflow: false
+    - verticalAlign: center
+    - scrollOverflow: false
+    - tooltipText: ''
+    - value: <img src="{{album_pictures.data[i].url}}" width="100"/>
+    - renderAsHtml: true
+    - backgroundColor: '#0000'
+    - textColor: '#312929'
+    - renderAsMarkdown: false
+position2:
+  position2:
+    container: listview1
+    row: 1
+    height: 3
+    width: 6
+tabIndex: 31
+createdAt: 2020-11-10T02:28:24.500Z

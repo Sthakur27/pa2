@@ -1,0 +1,22 @@
+id: text14
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - truncateOverflow: false
+    - verticalAlign: center
+    - scrollOverflow: false
+    - tooltipText: ''
+    - value: '##### Posts'
+    - renderAsHtml: true
+    - backgroundColor: '#0000'
+    - textColor: '#312929'
+    - renderAsMarkdown: true
+position2:
+  position2:
+    container: container4
+    height: 1
+    width: 3
+tabIndex: 34
+createdAt: 2020-11-10T02:28:24.500Z

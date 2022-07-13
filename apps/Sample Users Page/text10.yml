@@ -1,0 +1,23 @@
+id: text10
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - truncateOverflow: false
+    - verticalAlign: center
+    - scrollOverflow: false
+    - tooltipText: ''
+    - value: '###### Albums owned by {{ table1.selectedRow.data.name}}'
+    - renderAsHtml: true
+    - backgroundColor: '#0000'
+    - textColor: '#312929'
+    - renderAsMarkdown: true
+position2:
+  position2:
+    container: container2
+    row: 24
+    height: 1
+    width: 7
+tabIndex: 28
+createdAt: 2020-11-10T02:28:24.499Z

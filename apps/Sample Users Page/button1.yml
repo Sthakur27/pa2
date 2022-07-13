@@ -1,0 +1,30 @@
+id: button1
+type: widget
+subtype: ButtonWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - color: '#3c92dc'
+    - internalUrlHashParams: ''
+    - exportFileType: xlsx
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: true
+    - value: Search
+    - exportQuery: ''
+    - action: users
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - exportFileName: export
+    - loading: ''
+    - disabled: ''
+position2:
+  position2:
+    container: container1
+    row: 2
+    col: 10
+    height: 1
+    width: 2
+tabIndex: 8
+createdAt: 2020-11-10T02:28:24.497Z

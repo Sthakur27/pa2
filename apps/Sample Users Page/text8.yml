@@ -1,0 +1,24 @@
+id: text8
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - truncateOverflow: false
+    - verticalAlign: center
+    - scrollOverflow: false
+    - tooltipText: ''
+    - value: >-
+        *Note this page uses fake data from
+        https://jsonplaceholder.typicode.com/  (The search and filters do not
+        work, but you can browse albums and see pictures)*
+    - renderAsHtml: true
+    - backgroundColor: '#0000'
+    - textColor: '#312929'
+    - renderAsMarkdown: true
+position2:
+  position2:
+    height: 1
+    width: 12
+tabIndex: 20
+createdAt: 2020-11-10T02:28:24.498Z

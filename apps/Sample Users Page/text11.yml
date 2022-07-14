@@ -1,0 +1,24 @@
+id: text11
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - truncateOverflow: false
+    - verticalAlign: center
+    - scrollOverflow: false
+    - tooltipText: ''
+    - value: '###### Pictures in album "{{ table2.selectedRow.data.title}}"'
+    - renderAsHtml: true
+    - backgroundColor: '#0000'
+    - textColor: '#312929'
+    - renderAsMarkdown: true
+position2:
+  position2:
+    container: container2
+    row: 24
+    col: 7
+    height: 1
+    width: 5
+tabIndex: 30
+createdAt: 2020-11-10T02:28:24.499Z

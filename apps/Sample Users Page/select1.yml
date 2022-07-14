@@ -1,0 +1,37 @@
+id: select1
+type: widget
+subtype: SelectWidget
+template:
+  ordered:
+    - enableClientSideMatching: true
+    - values: '["unknown", "active", "inactive", "any"]'
+    - allowOutOfRangeValues: false
+    - enableFuzzyMatching: true
+    - searchValue: ''
+    - showFetchingIndicator: true
+    - enableCaseSensitivity: false
+    - validationMessage: ''
+    - displayValue: ''
+    - tooltipText: ''
+    - value: any
+    - maxResults: 50
+    - placeholder: ''
+    - label: Filter by status
+    - clearValueOnFocus: true
+    - labelMaxWidth: ''
+    - labelPlacedOnLeft: false
+    - validationState: ''
+    - onSelect: ''
+    - disabled: ''
+    - hideClearButton: false
+    - required: false
+    - labels: ''
+position2:
+  position2:
+    container: container1
+    row: 1
+    col: 4
+    height: 2
+    width: 2
+tabIndex: 7
+createdAt: 2020-11-10T02:28:24.496Z

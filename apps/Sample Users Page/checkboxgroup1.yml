@@ -1,0 +1,24 @@
+id: checkboxgroup1
+type: widget
+subtype: CheckboxGroupWidget
+template:
+  ordered:
+    - values: "[\"sales\", \"engineering\", \"ops\", \"support\", \"IT\"]\t"
+    - verticalAligned: false
+    - onChange: ''
+    - tooltipText: ''
+    - value: ''
+    - label: Filter by department
+    - labelMaxWidth: ''
+    - labelPlacedOnLeft: false
+    - disabled: ''
+    - labels: ''
+position2:
+  position2:
+    container: container1
+    row: 1
+    col: 6
+    height: 2
+    width: 4
+tabIndex: 11
+createdAt: 2020-11-10T02:28:24.497Z

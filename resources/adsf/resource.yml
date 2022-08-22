@@ -5,8 +5,9 @@ displayName: adsf
 dynamicallyQueryable: false
 editPrivilege: false
 environment: production
-host: asdf
+host: asdfsdfg
 options:
+  authentication: user_password
   connectionString: ''
   credentialPrivileges:
     allowRead: true

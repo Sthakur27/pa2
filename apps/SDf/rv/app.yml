@@ -1,9 +1,0 @@
-version: 43.0.9
-pageUuid: 5952e160-bc26-11ec-bfcb-db941de36836
-appTemplate:
-  experimentalPerfFeatures:
-    object:
-      batchCommitModelEnabled: false
-  rootScreen: null
-  version: 2.91.1
-  markdownLinkBehavior: auto

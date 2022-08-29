@@ -2,7 +2,6 @@ id: query1
 type: datasource
 subtype: SqlQuery
 resourceName: 15e3f6df-0f3d-4528-8b0e-5a7e994d251f
-resourceDisplayName: presto is besto
 template:
   ordered:
     - queryRefreshTime: ''

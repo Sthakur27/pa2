@@ -1,10 +1,12 @@
 id: query1
 type: datasource
-subtype: SqlQuery
-resourceName: 15e3f6df-0f3d-4528-8b0e-5a7e994d251f
+subtype: SqlQueryUnified
+resourceName: f470aa80-0f92-4fc3-81e0-1f36644087a7
+resourceDisplayName: aSDasd
 template:
   ordered:
     - queryRefreshTime: ''
+    - records: ''
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
@@ -21,14 +23,18 @@ template:
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
+    - recordId: ''
     - importedQueryInputs:
         ordered: []
     - isImported: false
     - showSuccessToaster: true
     - dataArray: []
     - cacheKeyTtl: ''
+    - filterBy: ''
     - databaseHostOverride: ''
     - metadata: null
+    - editorMode: sql
+    - actionType: ''
     - changesetObject: ''
     - shouldUseLegacySql: false
     - errorTransformer: >-
@@ -44,15 +50,17 @@ template:
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: null
+    - resourceTypeOverride: ''
     - watchedParams: []
     - enableErrorTransformer: false
+    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
+    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -62,7 +70,8 @@ template:
 
         return data
     - events: []
-    - queryTimeout: '10001'
+    - tableName: ''
+    - queryTimeout: '10000'
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
@@ -70,6 +79,7 @@ template:
     - allowedGroups: []
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''

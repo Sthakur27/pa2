@@ -16,7 +16,7 @@ template:
     - data: ''
     - isStackSeriesEnabled: false
     - xAxisTickFormat: ''
-    - skipDatasourceUpdate: true
+    - skipDatasourceUpdate: false
     - datasourceJS: '{{query1.data}}'
     - yAxisTickFormat: ''
     - datasourcePluginType: null

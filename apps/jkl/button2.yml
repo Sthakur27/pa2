@@ -1,4 +1,4 @@
-id: button1
+id: button2
 type: widget
 subtype: ButtonWidget2
 template:
@@ -8,8 +8,7 @@ template:
     - iconAfter: ''
     - submitTargetId: null
     - hidden: false
-    - text: |
-        Changed
+    - text: Button
     - showInEditor: false
     - tooltipText: ''
     - styleVariant: solid
@@ -25,8 +24,8 @@ style:
   ordered: []
 position2:
   position2:
-    row: 0.6
-    col: 7
+    row: 2.2
+    col: 5
     height: 1
     width: 3
-createdAt: 2022-09-06T22:10:32.212Z
+createdAt: 2022-09-12T16:37:50.124Z

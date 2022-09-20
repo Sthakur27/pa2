@@ -1,8 +1,8 @@
 id: query1
 type: datasource
 subtype: RESTQuery
-resourceName: 293a9608-6367-4c09-ad62-d1c3e3c1049d
-resourceDisplayName: Alex Test Rest
+resourceName: b2cd1b1a-2ae4-4607-af17-6712c1cd794a
+resourceDisplayName: blank rest api
 template:
   ordered:
     - queryRefreshTime: ''
@@ -46,7 +46,7 @@ template:
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: null
+    - resourceTypeOverride: ''
     - watchedParams: []
     - enableErrorTransformer: false
     - showLatestVersionUpdatedWarning: false

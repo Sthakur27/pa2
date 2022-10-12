@@ -9,7 +9,7 @@ template:
     - submitTargetId: null
     - hidden: false
     - text: |
-        Ayyyy Lmao
+        Ayyy Lmao
     - showInEditor: false
     - tooltipText: ''
     - styleVariant: solid

@@ -5,7 +5,7 @@ displayName: pr1
 dynamicallyQueryable: false
 editPrivilege: false
 environment: production
-host: asdf
+host: asdfdf
 options:
   authentication: user_password
   connectionString: ''

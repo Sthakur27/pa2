@@ -1,0 +1,28 @@
+databaseName: ''
+databasePassword: ''
+databaseUsername: ''
+displayName: pr1
+dynamicallyQueryable: false
+editPrivilege: false
+environment: production
+host: asdfdf3r
+options:
+  authentication: user_password
+  connectionString: ''
+  credentialPrivileges:
+    allowRead: true
+    allowWrite: true
+  queryEditorModes:
+    allowGuiMode: true
+    allowSqlMode: true
+  sshHost: ''
+  sshPassword: ''
+  sshPrivateKeyName: ''
+  sshTunnelEnabled: false
+  sshUsername: ''
+  version: SqlQueryUnified
+port: '5432'
+ssl: false
+type: postgresql
+uuid: d9344352-e19d-4dcf-b612-3ea524d43ac5
+version: 1.0.0

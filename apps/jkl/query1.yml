@@ -1,8 +1,8 @@
 id: query1
 type: datasource
 subtype: SqlQueryUnified
-resourceName: f8322ffd-e06c-4a76-a7a9-14bbef0e4f54
-resourceDisplayName: reallyBasedResource
+resourceName: 8727bca8-5cff-4700-848c-f13b73623390
+resourceDisplayName: asdfsadfe
 template:
   ordered:
     - queryRefreshTime: ''
@@ -16,12 +16,13 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: ''
+    - query: select * from users;
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
+    - warningCodes: []
     - data: null
     - recordId: ''
     - importedQueryInputs:
@@ -50,7 +51,7 @@ template:
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: null
+    - resourceTypeOverride: ''
     - watchedParams: []
     - enableErrorTransformer: false
     - enableBulkUpdates: false

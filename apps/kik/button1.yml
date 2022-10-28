@@ -3,7 +3,7 @@ type: widget
 subtype: ButtonWidget2
 template:
   ordered:
-  - horizontalAlign: stretch
+    - horizontalAlign: stretch
     - clickable: false
     - iconAfter: ''
     - submitTargetId: null

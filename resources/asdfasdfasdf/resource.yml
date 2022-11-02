@@ -5,7 +5,7 @@ displayName: asdfasdfasdf
 dynamicallyQueryable: false
 editPrivilege: false
 environment: production
-host: qwefrqwe
+host: newhost
 options:
   authentication: user_password
   connectionString: ''

@@ -1,42 +1,39 @@
 id: query1
 type: datasource
-subtype: SqlQueryUnified
-resourceName: 8727bca8-5cff-4700-848c-f13b73623390
-resourceDisplayName: asdfsadfe
+subtype: RESTQuery
+resourceName: REST-WithoutResource
 template:
   ordered:
     - queryRefreshTime: ''
-    - records: ''
+    - paginationLimit: ''
+    - body: ''
     - lastReceivedFromResourceAt: null
-    - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - successMessage: ''
     - queryDisabled: ''
-    - playgroundQuerySaveId: latest
+    - playgroundQuerySaveId: 3
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
+    - paginationPaginationField: ''
+    - headers: ''
     - showFailureToaster: true
+    - paginationEnabled: false
     - query: ''
-    - playgroundQueryUuid: ''
-    - playgroundQueryId: null
+    - playgroundQueryUuid: 41660915-23d4-44d2-9c47-0c1cc29462d2
+    - playgroundQueryId: 2
     - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
-    - recordId: ''
+    - retoolVersion: 2.103.1
     - importedQueryInputs:
         ordered: []
-    - isImported: false
+    - isImported: true
     - showSuccessToaster: true
-    - dataArray: []
     - cacheKeyTtl: ''
-    - filterBy: ''
-    - databaseHostOverride: ''
+    - cookies: ''
     - metadata: null
-    - editorMode: sql
-    - actionType: ''
     - changesetObject: ''
-    - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
         transformer. 
@@ -44,7 +41,6 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
-    - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -53,14 +49,13 @@ template:
     - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
-    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
-    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -70,16 +65,14 @@ template:
 
         return data
     - events: []
-    - tableName: ''
     - queryTimeout: '10001'
     - requireConfirmation: false
+    - type: GET
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
-    - databaseUsernameOverride: ''
-    - shouldEnableBatchQuerying: false
-    - doNotThrowOnNoOp: false
+    - bodyType: json
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''

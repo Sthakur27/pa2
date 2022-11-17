@@ -11,14 +11,14 @@ template:
     - queryDisabledMessage: ''
     - successMessage: ''
     - queryDisabled: ''
-    - playgroundQuerySaveId: 3
+    - playgroundQuerySaveId: 5
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - paginationPaginationField: ''
     - headers: ''
     - showFailureToaster: true
     - paginationEnabled: false
-    - query: ''
+    - query: https://ghibliapi.herokuapp.com/films
     - playgroundQueryUuid: 41660915-23d4-44d2-9c47-0c1cc29462d2
     - playgroundQueryId: 2
     - error: null

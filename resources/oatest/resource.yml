@@ -42,8 +42,8 @@ options:
   oauth2_share_user_credentials: false
   session_cookie_name: ''
   urlparams:
-    - - ''
-      - ''
+    - - a
+      - b
   verify_session_action_enabled: false
   verify_session_url: ''
 port: null

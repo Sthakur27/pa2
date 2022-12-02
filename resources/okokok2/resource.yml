@@ -1,0 +1,22 @@
+databaseName: ''
+databasePassword: ''
+databaseUsername: ''
+dynamicallyQueryable: false
+editPrivilege: false
+environment: production
+host: asdf
+options:
+  connectionString: ''
+  credentialPrivileges:
+    allowRead: true
+    allowWrite: true
+  queryEditorModes:
+    allowGuiMode: true
+    allowSqlMode: true
+  tds: '7_4'
+  version: SqlQueryUnified
+port: '1433'
+ssl: false
+type: mssql
+uuid: beed9778-b9a2-4d9c-acc6-978483054f95
+version: 1.0.0

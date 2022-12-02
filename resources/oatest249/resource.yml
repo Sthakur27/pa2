@@ -4,7 +4,6 @@ databaseUsername: null
 dynamicallyQueryable: false
 editPrivilege: null
 environment: production
-displayName: oatest24
 host: null
 options:
   auth0_clientID: ''

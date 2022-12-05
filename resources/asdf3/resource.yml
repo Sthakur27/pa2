@@ -5,7 +5,7 @@ displayName: asdf3
 dynamicallyQueryable: false
 editPrivilege: false
 environment: production
-host: newhost
+host: newhost2
 options:
   authentication: user_password
   connectionString: ''

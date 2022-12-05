@@ -1,0 +1,12 @@
+id: $header
+type: frame
+subtype: Frame
+template:
+  ordered:
+    - type: header
+    - sticky: true
+    - isHiddenOnDesktop: false
+    - isHiddenOnMobile: true
+style:
+  ordered: []
+createdAt: 2022-12-05T22:44:31.764Z

@@ -2,42 +2,71 @@ id: navigation
 type: widget
 subtype: NavigationWidget
 template:
-  horizontalAlign: left
-  menuItems:
-    - title: Learn more
-      hidden: ''
-      buttonType: action
-      clickable:
-        map:
-          buttonType: url
-      menuItems:
-        - title: Working with components
-          clickable:
-            buttonType: url
-            url: https://docs.retool.com/docs/understanding-components
-            newWindow: true
-        - title: Reading and writing data
-          clickable:
-            buttonType: url
-            url: https://docs.retool.com/docs/queries
-            newWindow: true
-        - title: Retool docs
-          clickable:
-            buttonType: url
-            url: https://docs.retool.com/
-            newWindow: true
-    - title: Community
-      hidden: ''
-      clickable:
-        buttonType: url
-        url: https://community.retool.com/
-        newWindow: true
-    - title: What's new
-      hidden: ''
-      clickable:
-        buttonType: url
-        url: https://updates.retool.com/en
-        newWindow: true
+  ordered:
+    - horizontalAlign: left
+    - valueToCopy: ''
+    - menuItems:
+        - ordered:
+            - title: Learn more
+            - hidden: ''
+            - buttonType: action
+            - clickable:
+                ordered:
+                  - buttonType: url
+            - menuItems:
+                - ordered:
+                    - title: Working with components
+                    - clickable:
+                        ordered:
+                          - buttonType: url
+                          - url: >-
+                              https://docs.retool.com/docs/understanding-components
+                          - newWindow: true
+                - ordered:
+                    - title: Reading and writing data
+                    - clickable:
+                        ordered:
+                          - buttonType: url
+                          - url: https://docs.retool.com/docs/queries
+                          - newWindow: true
+                - ordered:
+                    - title: Retool docs
+                    - clickable:
+                        ordered:
+                          - buttonType: url
+                          - url: https://docs.retool.com/
+                          - newWindow: true
+        - ordered:
+            - title: Community
+            - hidden: ''
+            - clickable:
+                ordered:
+                  - buttonType: url
+                  - url: https://community.retool.com/
+                  - newWindow: true
+        - ordered:
+            - title: What's new
+            - hidden: ''
+            - clickable:
+                ordered:
+                  - buttonType: url
+                  - url: https://updates.retool.com/en
+                  - newWindow: true
+    - srcFromUrl: true
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - logoImageFile: ''
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - logoImageSrc: ''
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - exportFileName: ''
+    - disabled: ''
 position2:
   position2:
     subcontainer: header

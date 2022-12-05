@@ -1,0 +1,46 @@
+id: navigation
+type: widget
+subtype: NavigationWidget
+template:
+  horizontalAlign: left
+  menuItems:
+    - title: Learn more
+      hidden: ''
+      buttonType: action
+      clickable:
+        map:
+          buttonType: url
+      menuItems:
+        - title: Working with components
+          clickable:
+            buttonType: url
+            url: https://docs.retool.com/docs/understanding-components
+            newWindow: true
+        - title: Reading and writing data
+          clickable:
+            buttonType: url
+            url: https://docs.retool.com/docs/queries
+            newWindow: true
+        - title: Retool docs
+          clickable:
+            buttonType: url
+            url: https://docs.retool.com/
+            newWindow: true
+    - title: Community
+      hidden: ''
+      clickable:
+        buttonType: url
+        url: https://community.retool.com/
+        newWindow: true
+    - title: What's new
+      hidden: ''
+      clickable:
+        buttonType: url
+        url: https://updates.retool.com/en
+        newWindow: true
+position2:
+  position2:
+    subcontainer: header
+    height: 1
+    width: 9
+createdAt: 2022-12-02T18:04:20.251Z

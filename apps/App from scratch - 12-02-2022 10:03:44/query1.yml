@@ -1,0 +1,23 @@
+id: query1
+type: datasource
+subtype: SqlQueryUnified
+resourceName: onboarding_db
+template:
+  queryRefreshTime: ''
+  queryDisabledMessage: ''
+  successMessage: ''
+  queryDisabled: ''
+  resourceNameOverride: ''
+  runWhenModelUpdates: true
+  query: select * from users limit 100
+  privateParams: []
+  data: null
+  showSuccessToaster: true
+  confirmationMessage: null
+  watchedParams: []
+  timestamp: 0
+  runWhenPageLoads: false
+  queryTimeout: '10001'
+  requireConfirmation: false
+  queryThrottleTime: '750'
+createdAt: 2022-12-02T18:04:20.251Z

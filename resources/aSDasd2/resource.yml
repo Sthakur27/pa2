@@ -1,0 +1,27 @@
+databaseName: ''
+databasePassword: ''
+databaseUsername: ''
+dynamicallyQueryable: false
+editPrivilege: false
+environment: production
+host: asDasd
+options:
+  authentication: user_password
+  connectionString: ''
+  credentialPrivileges:
+    allowRead: true
+    allowWrite: true
+  queryEditorModes:
+    allowGuiMode: true
+    allowSqlMode: true
+  sshHost: ''
+  sshPassword: ''
+  sshPrivateKeyName: ''
+  sshTunnelEnabled: false
+  sshUsername: ''
+  version: SqlQueryUnified
+port: '5432'
+ssl: false
+type: postgresql
+uuid: f470aa80-0f92-4fc3-81e0-1f36644087a7
+version: 1.0.0

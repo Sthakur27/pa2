@@ -20,7 +20,7 @@ options:
   sshTunnelEnabled: false
   sshUsername: ''
   version: SqlQueryUnified
-port: '5432'
+port: '54323'
 ssl: false
 type: postgresql
 uuid: 56f26dfb-89b5-4a9b-9069-45381063fd8e

@@ -1,0 +1,27 @@
+databaseName: ''
+databasePassword: ''
+databaseUsername: ''
+dynamicallyQueryable: false
+editPrivilege: false
+environment: production
+host: asdf
+options:
+  authentication: user_password
+  connectionString: ''
+  credentialPrivileges:
+    allowRead: true
+    allowWrite: true
+  queryEditorModes:
+    allowGuiMode: true
+    allowSqlMode: true
+  sshHost: ''
+  sshPassword: ''
+  sshPrivateKeyName: ''
+  sshTunnelEnabled: false
+  sshUsername: ''
+  version: SqlQueryUnified
+port: '3306'
+ssl: false
+type: mysql
+uuid: 652b024b-1299-46b9-9b37-08548cf6f0b3
+version: 1.0.0

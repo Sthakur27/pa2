@@ -4,7 +4,7 @@ databaseUsername: ''
 dynamicallyQueryable: false
 editPrivilege: false
 environment: production
-host: asDasd
+host: asDas
 options:
   authentication: user_password
   connectionString: ''

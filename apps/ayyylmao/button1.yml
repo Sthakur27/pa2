@@ -8,7 +8,7 @@ template:
     - iconAfter: ''
     - submitTargetId: null
     - hidden: false
-    - text: i love buttons
+    - text: asdf i love buttons
     - showInEditor: false
     - tooltipText: ''
     - styleVariant: solid

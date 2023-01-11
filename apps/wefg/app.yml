@@ -3,6 +3,6 @@ pageUuid: 4449394e-7743-11ed-b7a1-0f9e03ae47c1
 appTemplate:
   queryStatusVisibility: false
   rootScreen: null
-  version: 2.106.1
+  version: 2.108.0
   markdownLinkBehavior: auto
   experimentalDataTabEnabled: true

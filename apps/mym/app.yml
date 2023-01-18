@@ -2,8 +2,12 @@ version: 43.0.9
 pageUuid: a7b5385a-75c9-11ed-b0c8-73c18a040546
 appTemplate:
   queryStatusVisibility: false
+  experimentalPerfFeatures:
+    object:
+      serverDepGraphEnabled: false
+      useRuntimeV2: false
   rootScreen: null
   isGlobalWidget: true
-  version: 2.106.1
+  version: 2.108.1
   markdownLinkBehavior: auto
   experimentalDataTabEnabled: true

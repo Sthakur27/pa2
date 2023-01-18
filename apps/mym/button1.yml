@@ -1,4 +1,4 @@
-id: button1
+id button1
 type: widget
 subtype: ButtonWidget2
 template:
@@ -20,7 +20,7 @@ template:
     - loaderPosition: auto
     - disabled: false
     - maintainSpaceWhenHidden: false
-style:
+style
   ordered: []
 position2:
   position2:

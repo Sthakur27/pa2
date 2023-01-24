@@ -8,7 +8,7 @@ template:
     - iconAfter: ''
     - submitTargetId: null
     - hidden: false
-    - text: Button39
+    - text: Button43
     - showInEditor: false
     - tooltipText: ''
     - styleVariant: solid

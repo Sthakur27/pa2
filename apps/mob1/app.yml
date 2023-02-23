@@ -1,0 +1,14 @@
+version: 43.0.9
+pageUuid: 4a714696-ec2d-11ec-b832-7bbcb2add32b
+appTemplate:
+  experimentalPerfFeatures:
+    object:
+      batchCommitModelEnabled: false
+      skipDepCycleCheckingEnabled: false
+      serverDepGraphEnabled: false
+      useRuntimeV2: false
+  rootScreen: tabscreen
+  isMobileApp: true
+  version: 2.94.1
+  multiScreenMobileApp: true
+  markdownLinkBehavior: auto

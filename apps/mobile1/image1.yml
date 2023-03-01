@@ -2,10 +2,11 @@ id: image1
 type: widget
 subtype: RNImageWidget
 template:
-  src: '{{collectionView1.selectedItem.image}}'
-  ratio: 1
-  mode: cover
-  cornerType: square
+  ordered:
+    - src: '{{collectionView1.selectedItem.image}}'
+    - ratio: 1
+    - mode: cover
+    - cornerType: square
 position2:
   position2: {}
 mobileAppPosition:

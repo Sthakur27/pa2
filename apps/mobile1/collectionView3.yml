@@ -1,16 +1,17 @@
-id: collectionView1
+id: collectionView3
 type: widget
 subtype: RNCollectionViewV2Widget
 template:
   ordered:
-    - cardStyle: flat
-    - prefixImageShapeByIndex: square
+    - cardStyle: elevated
+    - prefixImageShapeByIndex:
+        array: []
     - titleByIndex: '{{item.name}}'
     - subtitleByIndex: '{{item.email}}'
     - prefixIconColorByIndex: ''
     - showSeparator: true
     - selectedPageIndex: 0
-    - cardType: compact
+    - cardType: media
     - serverPaginated: false
     - data: |-
         [{
@@ -89,24 +90,18 @@ template:
           "image": "https://picsum.photos/id/1025/200/200"
         }]
     - events:
-        - ordered:
-            - event: press
-            - type: navigator
-            - method: navigateTo
-            - params:
-                ordered:
-                  - screenPluginId: detailsScreen
+        ordered: []
     - _ids: []
     - bodyByIndex: '{{item.sales}}'
     - suffixValueByIndex: 'false'
-    - suffixTextByIndex: text
-    - subtitleLengthByIndex: 2
+    - suffixTextByIndex: Button
+    - subtitleLengthByIndex: '2'
+style:
+  ordered: []
 position2:
-  position2:
-    height: 5
-    width: 3
+  position2: {}
 mobileAppPosition:
   mobilePosition:
-    ordinal: 1
-createdAt: 2023-03-01T18:44:09.786Z
+    ordinal: 2
+createdAt: 2023-03-01T18:46:23.432Z
 screen: screen1

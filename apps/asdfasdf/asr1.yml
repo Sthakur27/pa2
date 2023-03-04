@@ -1,0 +1,19 @@
+id: asr1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: asr
+    - pageUuid: 8179a832-ad7e-11ed-bf15-87b9e3fed100
+    - childNamespace: asr1
+style:
+  ordered: []
+position2:
+  position2:
+    row: 4.4
+    col: 7
+    height: 2.4
+    width: 5
+createdAt: 2023-03-01T02:42:07.228Z

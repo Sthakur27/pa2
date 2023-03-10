@@ -11,6 +11,8 @@ template:
     - text: Buttoni
     - showInEditor: false
     - tooltipText: ''
+    - _disclosedFields:
+        array: []
     - styleVariant: solid
     - submit: false
     - iconBefore: ''
@@ -25,8 +27,8 @@ style:
 position2:
   position2:
     container: moduleContainer
-    row: 8.4
-    col: 8
+    row: 3.6000000000000005
+    col: 2
     height: 1
     width: 3
 createdAt: 2023-02-15T22:17:18.237Z

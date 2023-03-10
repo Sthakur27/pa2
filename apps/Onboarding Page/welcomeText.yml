@@ -1,0 +1,20 @@
+id: welcomeText
+type: widget
+subtype: TextWidget2
+template:
+  heightType: auto
+  horizontalAlign: right
+  hidden: false
+  imageWidth: fit
+  verticalAlign: center
+  tooltipText: ''
+  value: '#### 👋 Welcome, {{current_user.firstName || ''friend''}}'
+  disableMarkdown: false
+  overflowType: scroll
+position2:
+  position2:
+    subcontainer: header
+    col: 9
+    height: 0.6
+    width: 3
+createdAt: 2023-03-06T21:31:48.727Z

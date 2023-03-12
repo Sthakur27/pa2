@@ -8,7 +8,7 @@ template:
     - iconAfter: ''
     - submitTargetId: null
     - hidden: false
-    - text: Renamed
+    - text: Renamed3
     - showInEditor: false
     - tooltipText: ''
     - _disclosedFields:

@@ -10,6 +10,7 @@ template:
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -75,7 +76,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
-    - bodyType: json
+    - bodyType: none
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false

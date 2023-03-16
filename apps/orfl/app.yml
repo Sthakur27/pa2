@@ -8,5 +8,5 @@ appTemplate:
       useRuntimeV2: true
       runtimeV2OptOut: false
   rootScreen: null
-  version: 2.111.1
+  version: 2.115.0
   markdownLinkBehavior: auto

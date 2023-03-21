@@ -1,0 +1,13 @@
+version: 43.0.9
+pageUuid: 4d472e6c-bc66-11ed-ae0b-37d1c7b0c197
+appTemplate:
+  mobileAppSettings:
+    object:
+      mobileOfflineModeEnabled: false
+      mobileOfflineModeDelaySync: false
+      displaySetting:
+        object:
+          landscapeMode: false
+          tabletMode: false
+  rootScreen: null
+  version: 2.114.0

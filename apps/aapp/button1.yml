@@ -8,7 +8,7 @@ template:
     - iconAfter: ''
     - submitTargetId: null
     - hidden: false
-    - text: CORLGODasd
+    - text: conflictOnMB7
     - showInEditor: false
     - tooltipText: ''
     - _disclosedFields:

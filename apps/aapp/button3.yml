@@ -8,7 +8,7 @@ template:
     - iconAfter: ''
     - submitTargetId: null
     - hidden: false
-    - text: Button
+    - text: Buetton
     - showInEditor: false
     - tooltipText: ''
     - _disclosedFields:

@@ -8,6 +8,45 @@ appTemplate:
       useRuntimeV2: true
       runtimeV2OptOut: false
   rootScreen: null
+  testEntities:
+    array:
+      - object:
+          id: de801d38-758f-4438-aafe-2bfe170524b2
+          name: test1
+          body: |2-
+             // Mock the response for query1
+              const mockResponse = { fact: "A cat fact" };
+              await mock("query1", mockResponse);
+
+              // Trigger button1 click event
+              await eventTriggers.click("button1");
+
+              // Assert query1 is called
+              await assertQueryCalled("query1");
+
+              // Assert text1 value is updated with the result of query1
+              assertEquals(text1.value, "A cat fact");
+          type: test
+          pauseAllQueries: false
+          failureMessage: null
+      - object:
+          id: e90846aa-1c5e-4afd-82ed-21843dcb95d8
+          name: test2
+          body: |-
+            // Step 1: Mock query1's result
+            await mock("query1", { fact: "A random cat fact" });
+            // Step 2: Click button1
+            await eventTriggers.click("button1");
+            // Step 3: Check if query1 was called
+            await assertQueryCalled("query1");
+            // Step 4: Check if text1 displays the result of query1
+            assertEquals(text1.value, "A random cat fact");
+            // Step 5: Check if table1 has a row with the result of query1
+            console.log(table1.data[0])
+            assertCondition(table1.data[0] === "A random cat fact");
+          type: test
+          pauseAllQueries: false
+          failureMessage: null
   version: 2.117.0
   markdownLinkBehavior: auto
   experimentalDataTabEnabled: true

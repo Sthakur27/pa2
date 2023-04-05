@@ -1,0 +1,147 @@
+id: table1
+type: widget
+subtype: TableWidget2
+template:
+  ordered:
+    - selectedRowKey: null
+    - _nextAfterCursor: ''
+    - _columnBackgroundColor:
+        ordered:
+          - 5a0fe: ''
+    - _rowHeight: small
+    - _columnIds:
+        - 5a0fe
+    - _actionIds: []
+    - _limitOffsetRowCount: null
+    - selectedSourceRow: null
+    - _columnEditableOptions:
+        ordered:
+          - 5a0fe:
+              ordered: []
+    - _nextBeforeCursor: ''
+    - _persistRowSelection: false
+    - changesetArray:
+        array: []
+    - _columnOptionList:
+        ordered:
+          - 5a0fe:
+              ordered: []
+    - _columnValueOverride:
+        ordered:
+          - 5a0fe: '{{ currentSourceRow }}'
+    - _templatePageSize: 20
+    - _currentPage: 0
+    - _columnKey:
+        ordered:
+          - 5a0fe: ''
+    - hidden: false
+    - data: '[{{ query1.data.fact }}]'
+    - _cellSelection: none
+    - _serverPaginated: false
+    - searchMode: fuzzy
+    - _columnFormat:
+        ordered:
+          - 5a0fe: string
+    - _cursorCache:
+        object: {}
+    - _calculatedPageSize: null
+    - _primaryKeyColumnId: a78ec
+    - selectedDataIndex: null
+    - _columnAlignment:
+        ordered:
+          - 5a0fe: left
+    - _actionIcon:
+        ordered: []
+    - _columnTooltip:
+        ordered:
+          - 5a0fe: ''
+    - _columnIcon:
+        ordered:
+          - 5a0fe: ''
+    - _pageSize: null
+    - showInEditor: false
+    - selectedSourceRows:
+        array: []
+    - hideHeader: false
+    - _columnSortDisabled:
+        ordered:
+          - 5a0fe: false
+    - _currentPageClamped: 0
+    - changesetObject: null
+    - _actionDisabled:
+        ordered: []
+    - _columnReferenceId:
+        ordered:
+          - 5a0fe: fact
+    - _rowSelection: single
+    - _columnCaption:
+        ordered:
+          - 5a0fe: ''
+    - _dynamicRowHeights: false
+    - _columnFormatOptions:
+        ordered:
+          - 5a0fe:
+              ordered: []
+    - _afterCursor: ''
+    - selectedRowKeys:
+        array: []
+    - _disclosedFields:
+        array: []
+    - _beforeCursor: ''
+    - showColumnBorders: false
+    - searchTerm: ''
+    - selectedRows:
+        array: []
+    - _columnSize:
+        ordered:
+          - 5a0fe: 100
+    - _serverPaginationType: limitOffsetBased
+    - events:
+        - ordered:
+            - event: clickCell
+            - type: util
+            - method: openUrl
+            - pluginId: ''
+            - targetId: 3a6c1
+            - params:
+                ordered:
+                  - url: mailto:{{ item }}
+            - waitType: debounce
+            - waitMs: '0'
+    - _columnEditable:
+        ordered:
+          - 5a0fe: false
+    - pagination: null
+    - selectedDataIndexes:
+        array: []
+    - overflowType: scroll
+    - hideFooter: false
+    - selectedCell: null
+    - _defaultSelectedRow:
+        ordered: []
+    - _hasNextPage: false
+    - _columnPosition:
+        ordered:
+          - 5a0fe: center
+    - sort: null
+    - _actionLabel:
+        ordered: []
+    - selectedRow: null
+    - _actionHidden:
+        ordered: []
+    - maintainSpaceWhenHidden: false
+    - _columnHidden:
+        ordered:
+          - 5a0fe: ''
+    - _columnLabel:
+        ordered:
+          - 5a0fe: fact
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.5999999999999996
+    col: 5
+    height: 8
+    width: 4
+createdAt: 2023-04-05T00:38:37.064Z

@@ -35,8 +35,8 @@ style:
   ordered: []
 position2:
   position2:
-    row: 2
-    col: 5
+    row: 1.2
+    col: 1
     height: 1
     width: 3
 createdAt: 2023-04-04T18:21:08.374Z

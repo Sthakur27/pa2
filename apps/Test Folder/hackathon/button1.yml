@@ -1,4 +1,4 @@
-id: button3
+id: button1
 type: widget
 subtype: ButtonWidget2
 template:
@@ -8,7 +8,7 @@ template:
     - iconAfter: ''
     - submitTargetId: null
     - hidden: false
-    - text: Buetiton
+    - text: Get A Cat Fact
     - showInEditor: false
     - tooltipText: ''
     - _disclosedFields:
@@ -17,7 +17,16 @@ template:
     - submit: false
     - iconBefore: ''
     - events:
-        ordered: []
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: query1
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - loading: false
     - loaderPosition: auto
     - disabled: false
@@ -26,8 +35,8 @@ style:
   ordered: []
 position2:
   position2:
-    row: 5.4
-    col: 7
+    row: 2
+    col: 5
     height: 1
     width: 3
-createdAt: 2023-03-28T07:14:55.954Z
+createdAt: 2023-04-04T18:21:08.374Z

@@ -15,10 +15,11 @@ template:
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: 'select * from orgs'
+    - query: select * from orgs
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -77,6 +78,7 @@ template:
     - events: []
     - tableName: ''
     - queryTimeout: '10001'
+    - workflowId: null
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false

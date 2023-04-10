@@ -8,7 +8,7 @@ template:
     - iconAfter: ''
     - submitTargetId: null
     - hidden: false
-    - text: ma1234
+    - text: 123ma1234
     - showInEditor: false
     - tooltipText: 'tip'
     - _disclosedFields:

@@ -18,7 +18,7 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: 'select * from orgs'
+    - query: select * from orgs
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null

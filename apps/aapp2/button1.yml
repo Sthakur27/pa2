@@ -10,7 +10,7 @@ template:
     - hidden: false
     - text: newtext3
     - showInEditor: false
-    - tooltipText: 'tip'
+    - tooltipText: tip
     - _disclosedFields:
         array: []
     - styleVariant: solid

@@ -48,12 +48,12 @@ options:
   oauth2_access_token: ''
   oauth2_access_token_url: asdf
   oauth2_auth_url: asdf
-  oauth2_callback_url: '{{ env.BASE_DOMAIN }}/oauth/user/oauthcallback'
+  oauth2_callback_url: '{{ env.BASE_DOMAIN }}/oauth/oauthcallback'
   oauth2_client_id: adsf
   oauth2_client_secret: ''
   oauth2_refresh_token: ''
   oauth2_scope: ''
-  oauth2_share_user_credentials: false
+  oauth2_share_user_credentials: true
   password: ''
   privateKey: ''
   privateKeyPass: ''

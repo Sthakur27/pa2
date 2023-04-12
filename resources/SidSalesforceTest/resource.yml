@@ -28,12 +28,12 @@ options:
   oauth2_access_token_accessible_in_all_resources: false
   oauth2_access_token_url: https://test.salesforce.com/services/oauth2/token
   oauth2_auth_url: https://test.salesforce.com/services/oauth2/authorize
-  oauth2_callback_url: '{{ env.BASE_DOMAIN }}/oauth/oauthcallback'
+  oauth2_callback_url: '{{ env.BASE_DOMAIN }}/oauth/user/oauthcallback'
   oauth2_client_id: asdf
   oauth2_client_secret: ''
   oauth2_refresh_token: ''
   oauth2_scope: api refresh_token
-  oauth2_share_user_credentials: true
+  oauth2_share_user_credentials: false
   password: ''
   privateKey: ''
   privateKeyPass: ''

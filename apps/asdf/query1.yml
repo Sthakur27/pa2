@@ -2,7 +2,6 @@ id: query1
 type: datasource
 subtype: RESTQuery
 resourceName: f8fc5f72-624f-4218-8646-e2be8e77d2cb
-resourceDisplayName: Cat Facts
 template:
   ordered:
     - queryRefreshTime: ''

@@ -1,0 +1,19 @@
+id: simplemodule1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: simplemodule
+    - pageUuid: 47f3a0f0-eb8a-11ed-8e61-1f1b6f59b18d
+    - childNamespace: simplemodule1
+style:
+  ordered: []
+position2:
+  position2:
+    row: 2.6
+    col: 3
+    height: 2.4
+    width: 9
+createdAt: 2023-05-05T21:18:12.296Z

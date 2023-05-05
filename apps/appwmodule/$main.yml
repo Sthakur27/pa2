@@ -1,0 +1,14 @@
+id: $main
+type: frame
+subtype: Frame
+template:
+  ordered:
+    - isHiddenOnDesktop: false
+    - isHiddenOnMobile: false
+    - sticky: false
+    - type: main
+style:
+  ordered: []
+position2:
+  position2: {}
+createdAt: 2023-05-04T21:12:52.557Z

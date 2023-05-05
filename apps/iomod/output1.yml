@@ -1,0 +1,7 @@
+id: output1
+type: globalwidgetoutput
+subtype: GlobalWidgetOutput
+template:
+  ordered:
+    - value: '{{ text1.value }}'
+createdAt: 2023-05-04T00:05:14.312Z

@@ -1,0 +1,8 @@
+id: input1
+type: globalwidgetprop
+subtype: GlobalWidgetProp
+template:
+  ordered:
+    - value: ''
+    - defaultValue: ''
+createdAt: 2023-05-04T00:05:12.414Z

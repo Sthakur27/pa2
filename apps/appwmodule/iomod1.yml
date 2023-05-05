@@ -1,0 +1,23 @@
+id: iomod1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - childNamespace: iomod1
+    - input1: '{{textInput1.value}}'
+    - name: iomod
+    - output1: '{{output1.value}}'
+    - pageUuid: a33b1e4c-ea05-11ed-8e96-0b646f294bbf
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    subcontainer: bc608
+    row: 0.6
+    col: 1
+    height: 2.4
+    width: 11
+createdAt: 2023-05-04T21:12:52.557Z

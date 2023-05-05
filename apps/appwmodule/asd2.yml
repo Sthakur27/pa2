@@ -1,0 +1,18 @@
+id: asd2
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: fixed
+    - childNamespace: asd
+    - name: asr
+    - pageUuid: 8179a832-ad7e-11ed-bf15-87b9e3fed100
+style:
+  ordered: []
+position2:
+  position2:
+    col: 2
+    height: 10.200000000000001
+    width: 4
+createdAt: 2023-05-04T21:12:52.557Z

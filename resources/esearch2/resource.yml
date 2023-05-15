@@ -13,9 +13,9 @@ options:
   athena_secret_access_key: ''
   auth0_access_token: ''
   auth0_clientSecret: ''
-  authentication: ''
+  authentication: apiKey
   aws_secret_access_key: ''
-  baseURL: https://ayylmao.com
+  baseURL: https://ayylmao.com2
   basic_password: ''
   ca_cert: ''
   client_cert: ''

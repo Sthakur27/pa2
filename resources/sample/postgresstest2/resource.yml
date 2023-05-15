@@ -1,6 +1,7 @@
 databaseName: ''
 databasePassword: ''
 databaseUsername: ''
+description: null
 dynamicallyQueryable: false
 editPrivilege: false
 environment: production
@@ -29,6 +30,7 @@ options:
   oauth2_access_token: ''
   oauth2_client_secret: ''
   oauth2_refresh_token: ''
+  password: ''
   privateKey: ''
   privateKeyPass: ''
   queryEditorModes:
@@ -43,6 +45,7 @@ options:
   sshUsername: ''
   user_auth_key: ''
   version: SqlQueryUnified
+outboundRegion: null
 port: '54323'
 ssl: false
 type: postgresql

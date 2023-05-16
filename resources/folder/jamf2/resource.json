@@ -1,0 +1,16 @@
+<Resource
+  databaseName=""
+  databasePassword=""
+  databaseUsername=""
+  description={null}
+  dynamicallyQueryable={false}
+  editPrivilege={false}
+  environment="production"
+  host="asdf3ef"
+  options={{"sshHost":"","version":"SqlQueryUnified","sshPassword":"","sshUsername":"","authentication":"user_password","connectionString":"","queryEditorModes":{"allowGuiMode":true,"allowSqlMode":true},"sshTunnelEnabled":false,"sshPrivateKeyName":"","auth0_clientSecret":"","basic_password":"","oauth1_consumer_secret":"","oauth2_access_token":"","auth0_access_token":"","oauth2_refresh_token":"","oauth2_client_secret":"","serviceAccountKey":"","password":"","googleToken":"","s3_secret_access_key_id":"","athena_secret_access_key":"","dynamo_secret_access_key":"","amazon_secret_access_key":"","aws_secret_access_key":"","api_key":"","application_key":"","ca_cert":"","client_cert_and_key":"","client_key":"","client_cert":"","user_auth_key":"","privateKey":"","privateKeyPass":""}}
+  outboundRegion={null}
+  port="5432"
+  ssl={false}
+  type="postgresql"
+  uuid="cb91c95d-69e8-4782-b8cb-f68c79e59ef1"
+/>

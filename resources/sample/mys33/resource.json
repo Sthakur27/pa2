@@ -1,0 +1,24 @@
+{
+  "type": "s3",
+  "host": null,
+  "port": null,
+  "databaseName": null,
+  "databaseUsername": null,
+  "description": "asdf",
+  "outboundRegion": null,
+  "ssl": null,
+  "editPrivilege": null,
+  "options": {
+    "assumeRole": "",
+    "authWithIAM": false,
+    "forcePathStyle": false,
+    "s3_access_key_id": "1",
+    "s3_default_acl": "asdf",
+    "s3_default_bucket_name": "mabucket",
+    "usingThirdPartyProvider": false
+  },
+  "environment": "production",
+  "dynamicallyQueryable": false,
+  "uuid": "2e5d4fd0-6701-46ca-9de6-9ff03a528cd7",
+  "toolscriptVersion": "0.0.1"
+}

@@ -20,7 +20,7 @@ template:
     - runWhenModelUpdates: true
     - workflowRunId: null
     - showFailureToaster: true
-    - query: modifyme
+    - query: modifyme2
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null

@@ -1,4 +1,4 @@
-id: query1
+id: query4
 type: datasource
 subtype: SqlQueryUnified
 resourceName: f470aa80-0f92-4fc3-81e0-1f36644087a7
@@ -20,7 +20,7 @@ template:
     - runWhenModelUpdates: true
     - workflowRunId: null
     - showFailureToaster: true
-    - query: delme
+    - query: asdf
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -92,4 +92,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-06-22T22:42:04.967Z
+createdAt: 2023-06-22T22:48:54.721Z

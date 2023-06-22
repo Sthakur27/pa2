@@ -9,7 +9,7 @@ template:
     - persistedValueKey: ''
     - value: |-
         [
-          a: 'bcd',
+          a: 'bdcd',
           b: 'def'
         ]
 style:

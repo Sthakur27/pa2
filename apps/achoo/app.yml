@@ -8,5 +8,5 @@ appTemplate:
       serverDepGraphEnabled: false
       useRuntimeV2: true
       runtimeV2OptOut: false
-  version: 3.2.0
+  version: 3.3.0
   experimentalDataTabEnabled: true

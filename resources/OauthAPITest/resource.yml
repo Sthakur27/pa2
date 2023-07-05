@@ -1,0 +1,75 @@
+databaseName: null
+databasePassword: ''
+databaseUsername: null
+description: null
+dynamicallyQueryable: false
+editPrivilege: null
+environment: production
+host: null
+options:
+  amazon_secret_access_key: ''
+  api_key: ''
+  application_key: ''
+  athena_secret_access_key: ''
+  auth0_access_token: ''
+  auth0_clientID: ''
+  auth0_clientSecret: ''
+  auth0_custom_audience: ''
+  auth0_domain: ''
+  authentication: oauth2
+  aws_secret_access_key: ''
+  baseURL: https://ayy.lmao
+  basic_password: ''
+  basic_username: ''
+  ca_cert: ''
+  client_cert: ''
+  client_cert_and_key: ''
+  client_key: ''
+  connectionString: ''
+  cookiesToForward: []
+  digest_password: ''
+  digest_server_auth_header_response: ''
+  digest_username: ''
+  dynamo_secret_access_key: ''
+  extraBodyKeyValues:
+    - - ''
+      - ''
+  forwardAllCookies: false
+  googleToken: ''
+  headers:
+    - - ''
+      - ''
+  oauth1_consumer_key: ''
+  oauth1_consumer_secret: ''
+  oauth1_realm_parameter: ''
+  oauth1_signature_method: HMAC-SHA1
+  oauth1_token_key: ''
+  oauth1_token_secret: ''
+  oauth2_access_token: ''
+  oauth2_access_token_url: asdf
+  oauth2_auth_url: asdf
+  oauth2_callback_url: '{{ env.BASE_DOMAIN }}/oauth/oauthcallback'
+  oauth2_client_id: adsf
+  oauth2_client_secret: ''
+  oauth2_refresh_token: ''
+  oauth2_scope: ''
+  oauth2_share_user_credentials: true
+  password: ''
+  privateKey: ''
+  privateKeyPass: ''
+  s3_secret_access_key_id: ''
+  serviceAccountKey: ''
+  session_cookie_name: ''
+  sshPassword: ''
+  urlparams:
+    - - ''
+      - ''
+  user_auth_key: ''
+  verify_session_action_enabled: false
+  verify_session_url: ''
+outboundRegion: null
+port: null
+ssl: null
+type: restapi
+uuid: 772ead4f-d406-4609-9325-ca5222a2a159
+version: 1.0.0

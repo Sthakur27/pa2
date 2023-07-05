@@ -1,0 +1,25 @@
+{
+  "type": "postgresql",
+  "host": "asDas",
+  "port": "5432",
+  "databaseName": "",
+  "databaseUsername": "",
+  "description": null,
+  "outboundRegion": null,
+  "ssl": false,
+  "editPrivilege": false,
+  "options": {
+    "authentication": "user_password",
+    "credentialPrivileges": { "allowRead": true, "allowWrite": true },
+    "queryEditorModes": { "allowGuiMode": true, "allowSqlMode": true },
+    "sshHost": "",
+    "sshPrivateKeyName": "",
+    "sshTunnelEnabled": false,
+    "sshUsername": "",
+    "version": "SqlQueryUnified"
+  },
+  "environment": "production",
+  "dynamicallyQueryable": false,
+  "uuid": "f470aa80-0f92-4fc3-81e0-1f36644087a7",
+  "toolscriptVersion": "0.0.1"
+}

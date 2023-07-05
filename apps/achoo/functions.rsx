@@ -4,7 +4,7 @@
       id="state1"
       value="[
   a: 'bdcd',
-  b: 'def2'
+  b: 'def'
 ]"
     />
     <State id="state2" value="[ 'asdf3','cats']" />

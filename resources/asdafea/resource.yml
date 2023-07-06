@@ -1,0 +1,26 @@
+databaseName: null
+databasePassword: ''
+databaseUsername: null
+description: null
+dynamicallyQueryable: false
+editPrivilege: null
+environment: production
+host: null
+options:
+  authentication: oauth2
+  oauth2_access_token_url: https://www.googleapis.com/oauth2/v4/token
+  oauth2_auth_url: https://accounts.google.com/o/oauth2/v2/auth
+  oauth2_callback_url: '{{ env.BASE_DOMAIN }}/oauth/user/oauthcallback'
+  oauth2_client_id: 192532348558-gio85i5mpadk2ns4sgo7r5m4gvl2vhev.apps.googleusercontent.com
+  oauth2_scope: >-
+    email profile https://www.googleapis.com/auth/drive
+    https://www.googleapis.com/auth/drive.file
+    https://www.googleapis.com/auth/spreadsheets
+  oauth2_share_user_credentials: false
+outboundRegion: null
+port: null
+ssl: null
+type: googlesheets
+uuid: 47640978-03b3-4738-8eb9-528af0c4568a
+version: 1.0.0
+whitelabeled: null

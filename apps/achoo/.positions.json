@@ -1,0 +1,5 @@
+{
+  "button1": { "row": 5.2, "col": 8, "height": 1 },
+  "button2": { "row": 2.8, "col": 5, "height": 1 },
+  "button3": { "row": 2, "col": 9, "height": 1 }
+}

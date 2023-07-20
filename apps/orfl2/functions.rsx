@@ -1,0 +1,71 @@
+<GlobalFunctions>
+  <RESTQuery
+    id="query1"
+    allowedGroups={[]}
+    body=""
+    bodyType="none"
+    cacheKeyTtl=""
+    changeset=""
+    changesetIsObject={false}
+    changesetObject=""
+    confirmationMessage={null}
+    cookies=""
+    data={null}
+    enableCaching={false}
+    enableErrorTransformer={false}
+    enableTransformer={false}
+    error={null}
+    errorTransformer="// The variable 'data' allows you to reference the request's data in the transformer. 
+// example: return data.find(element => element.isError)
+return data.error"
+    finished={null}
+    headers=""
+    importedQueryDefaults={{ ordered: [] }}
+    importedQueryInputs={{ ordered: [] }}
+    isFetching={false}
+    isImported={false}
+    lastReceivedFromResourceAt={null}
+    metadata={null}
+    notificationDuration=""
+    offlineQueryType="None"
+    paginationDataField=""
+    paginationEnabled={false}
+    paginationLimit=""
+    paginationPaginationField=""
+    playgroundQueryId={null}
+    playgroundQuerySaveId="latest"
+    playgroundQueryUuid=""
+    privateParams={[]}
+    query="https://httpbin.org/get"
+    queryDisabled=""
+    queryDisabledMessage=""
+    queryFailureConditions=""
+    queryRefreshTime=""
+    queryRunTime={null}
+    queryThrottleTime="750"
+    queryTimeout="10001"
+    queryTriggerDelay="0"
+    rawData={null}
+    requestSentTimestamp={null}
+    requireConfirmation={false}
+    resourceName="REST-WithoutResource"
+    resourceNameOverride=""
+    resourceTypeOverride={null}
+    runWhenModelUpdates={true}
+    runWhenPageLoads={false}
+    runWhenPageLoadsDelay=""
+    servedFromCache={false}
+    showFailureToaster={true}
+    showLatestVersionUpdatedWarning={false}
+    showSuccessToaster={true}
+    showUpdateSetValueDynamicallyToggle={true}
+    successMessage=""
+    timestamp={0}
+    transformer="// type your code here
+// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
+return data"
+    type="GET"
+    updateSetValueDynamically={false}
+    watchedParams={[]}
+  />
+</GlobalFunctions>

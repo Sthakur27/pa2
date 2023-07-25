@@ -1,0 +1,19 @@
+{
+  "toolscriptVersion": "0.0.1",
+  "version": "43.0.9",
+  "pageUuid": "ee5eeef2-0c8e-11ee-bf94-97b5a0f13e3a",
+  "appTemplate": {
+    "experimentalFeatures": {
+      "object": { "sourceControlTemplateDehydration": false }
+    },
+    "experimentalPerfFeatures": {
+      "object": {
+        "serverDepGraphEnabled": false,
+        "useRuntimeV2": true,
+        "runtimeV2OptOut": false
+      }
+    },
+    "version": "3.1.0",
+    "experimentalDataTabEnabled": true
+  }
+}

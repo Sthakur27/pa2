@@ -1,0 +1,15 @@
+{
+  "toolscriptVersion": "0.0.1",
+  "version": "43.0.9",
+  "pageUuid": "07f0460a-7e55-11ec-a78c-fb8eb1d5497a",
+  "appTemplate": {
+    "appThemeId": 1,
+    "experimentalFeatures": {
+      "object": { "sourceControlTemplateDehydration": false }
+    },
+    "experimentalPerfFeatures": {
+      "object": { "batchCommitModelEnabled": false }
+    },
+    "version": "3.8.0"
+  }
+}

@@ -1,0 +1,1 @@
+select count(*) from fraud_transactions where is_fraud

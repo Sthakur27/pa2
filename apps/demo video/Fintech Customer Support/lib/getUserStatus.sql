@@ -1,0 +1,1 @@
+select account_status from users group by 1

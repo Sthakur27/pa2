@@ -1,0 +1,1 @@
+select application_status from kyc_applications group by 1

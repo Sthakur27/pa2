@@ -1,0 +1,1 @@
+uploadKYCDocsModal.open()

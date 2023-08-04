@@ -1,0 +1,9 @@
+<GlobalFunctions>
+  <RESTQuery
+    id="query1"
+    query="asdfasdfa"
+    queryTimeout="10001"
+    resourceDisplayName="resourceNameTest"
+    resourceName="96f18573-d99a-41b6-beb4-4dcce2c36378"
+  />
+</GlobalFunctions>

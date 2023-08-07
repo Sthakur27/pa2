@@ -25,7 +25,7 @@
     <Module
       id="finTechLink2"
       ButtonIcon={'{{  "/icon:bold/computer-desktop-check"  }}'}
-      Description="Monitor flagged transactions, capture notes, and flag for additional review ..."
+      Description="Monitor flagged transactions, capture notes, and flag for additional review"
       Header="Review Flagged Transactions"
       IconPrimariy="#CC62C4"
       IconSecondary="#F6E6F4"
@@ -36,7 +36,7 @@
     <Module
       id="finTechLink1"
       ButtonIcon={'{{  "/icon:bold/interface-lock-key"  }}'}
-      Description="Simulate fraud ML model and track model performance"
+      Description="Simulate fraud using an ML model and track model performance"
       Header="ML Model Configuration"
       IconPrimariy=""
       IconSecondary=""

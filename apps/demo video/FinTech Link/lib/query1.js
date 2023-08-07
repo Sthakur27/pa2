@@ -1,0 +1,1 @@
+utils.openApp(Link.value)

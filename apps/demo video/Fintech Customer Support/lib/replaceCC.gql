@@ -1,9 +1,0 @@
-mutation MyMutation($cc_number: String!, $close_date: String, $replace_reason: String, $closed_by: String, $status: String) {
-  update_credit_cards_new_by_pk(pk_columns: {cc_number: $cc_number}, _set: {close_date: $close_date, replace_reason: $replace_reason, closed_by: $closed_by, status: $status}) {
-    cc_number
-    close_date
-    replace_reason
-    closed_by
-    status
-  }
-}

@@ -29,7 +29,8 @@
   "text2": {
     "container": "container1",
     "subcontainer": "e47d5",
-    "row": 1,
+    "row": 0.2,
+    "col": 2,
     "height": 0.6,
     "width": 10
   }

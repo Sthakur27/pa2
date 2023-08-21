@@ -1,0 +1,129 @@
+id: createTempTableInBQ
+type: datasource
+subtype: SqlQueryUnified
+resourceName: baf420ab-7126-46a1-b825-ef601c001acf
+resourceDisplayName: Billing
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - records: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: |-
+        DROP TABLE IF EXISTS billing.temp_invoice_status;
+
+        CREATE TABLE `billing.temp_invoice_status`
+        (
+          ds DATE,
+          stripe_customer_id STRING,
+          retool_customer_id STRING,
+          org_sid STRING,
+          deployment_id BIGNUMERIC,
+          environment STRING,
+          status STRING,
+          invoice_id STRING,
+          updated_at TIMESTAMP
+        )
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - warningCodes: []
+    - data: null
+    - recordId: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - filterBy: ''
+    - requestSentTimestamp: null
+    - databaseHostOverride: ''
+    - metadata: null
+    - workflowActionType: null
+    - editorMode: sql
+    - queryRunTime: null
+    - actionType: ''
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - enableBulkUpdates: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - bulkUpdatePrimaryKey: ''
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - tableName: ''
+    - queryTimeout: '300000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - workflowBlockPluginId: null
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2023-06-12T19:44:26.338Z
+blockData:
+  top: 32
+  left: 1600
+  uuid: c6db5d73-91fe-4368-b201-edf097de775b
+  pluginId: createTempTableInBQ
+  blockType: default
+  editorType: SqlQueryUnified
+  retryPolicy:
+    numAttempts: 4
+    initialIntervalMs: 1000
+  resourceName: baf420ab-7126-46a1-b825-ef601c001acf
+  retryPanelOpen: false
+  responsePanelState: closed
+  incomingOnSuccessEdges:
+    - 64925771-c155-4f31-adc5-c3febdd08ec5

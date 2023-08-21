@@ -1,0 +1,155 @@
+id: getBestMatches
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: >-
+        // const docsEmbeddings = getDocsEmbeddings.data.matches.map(i => ({
+        ...i, source: "docs"}));
+
+        const docsEmbeddings = updatedDocs.data.map(i => ({ ...i, score:
+        i.similarity, source: "docs"}))
+
+
+        const confluenceEmbeddings = getConfluenceEmbeddings.data.matches.map(i
+        => ({ ...i, source: "confluence"}));;
+
+
+        const slackEmbeddings = getSlackEmbeddings.data.matches.map(i => ({
+        ...i, source: "slack"}));;
+
+
+        const combined =
+        docsEmbeddings.concat(confluenceEmbeddings).concat(slackEmbeddings);
+
+
+        const bestMatchEmbeddings = _.reverse(_.sortBy(combined, ["score"]))
+
+
+        const getTextAndLink = (match) => {
+          let hit;
+          switch(match.source) {
+            case "confluence":
+              hit = getConfluenceMatches.data.find(row => row.id == match.id);
+              if (!hit) return null;
+              return { text: hit.messages, link: hit.link };
+            case "slack":
+              hit = getSlackMatches.data.find(row => row.thread_id == match.id);
+              if (!hit) return null;
+              return { text: hit.messages, link: hit.link };
+            case "docs":
+              return { text: match.content, link: match.url }
+              // hit = getDocsMatches.data.find(row => row.id == match.id);
+              // if (!hit) return null;
+              // return { text: hit.messages, link: hit.link };
+            default:
+              return "none"
+          }
+        }
+
+
+        const combinePineconeAndPostgresResults = bestMatchEmbeddings.map(match
+        => {
+          return {
+            source: match.source,
+            ...getTextAndLink(match)
+          }
+        });
+
+
+        return combinePineconeAndPostgresResults;
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - _additionalScope: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - workflowActionType: null
+    - editorMode: sql
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '120000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - workflowBlockPluginId: null
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2023-05-18T15:29:34.568Z
+blockData:
+  top: 32
+  left: 2608
+  uuid: 9e1a94a8-42bf-4dde-9cf1-e3e6a2c74500
+  pluginId: getBestMatches
+  blockType: code
+  dimensions:
+    width: 878
+    height: 746
+  editorType: JavascriptQuery
+  resourceName: JavascriptQuery
+  retryPanelOpen: false
+  responsePanelState: open
+  incomingOnSuccessEdges:
+    - 56c3c3e4-673f-4fa9-9e7a-c072592abbbb
+    - e0b3a72b-dd80-403a-947e-ec640fddc454
+    - ed8ff43b-c25c-45da-87ce-77c04f71a07c

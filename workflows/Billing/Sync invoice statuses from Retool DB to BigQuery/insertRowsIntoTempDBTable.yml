@@ -1,0 +1,105 @@
+id: insertRowsIntoTempDBTable
+type: datasource
+subtype: SqlQuery
+resourceName: b69c0bd0-e2c9-498d-a446-5ed9e8ae0201
+resourceDisplayName: Databricks Billing Catalog (read write)
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: |-
+        insert into billing.dbt.temp_invoice_status
+        values {{ dynamicQuery.data }}
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - warningCodes: []
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - databaseHostOverride: ''
+    - metadata: null
+    - workflowActionType: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
+    - events: []
+    - queryTimeout: '120000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - workflowBlockPluginId: null
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2023-08-04T23:39:53.124Z
+blockData:
+  top: 464
+  left: 2928
+  uuid: 834f548b-a273-4c31-83c5-771ed9dc51ae
+  pluginId: insertRowsIntoTempDBTable
+  blockType: default
+  editorType: SqlQuery
+  retryPolicy:
+    numAttempts: 2
+    initialIntervalMs: 1000
+  resourceName: b69c0bd0-e2c9-498d-a446-5ed9e8ae0201
+  incomingPorts: []
+  retryPanelOpen: false
+  responsePanelState: closed
+  incomingOnSuccessEdges:
+    - 5ec996fe-a7e2-4022-bc7a-91c31bd9e3e1

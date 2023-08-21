@@ -1,0 +1,119 @@
+id: finalize_invoice
+type: datasource
+subtype: OpenAPIQuery
+resourceName: d4fabe38-bed8-415a-8e7d-8a2dcfdede2f
+resourceDisplayName: Retool Stripe Account
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - method: post
+    - operationId: PostInvoicesInvoiceFinalize
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - server: https://api.stripe.com/
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - path: /v1/invoices/{invoice}/finalize
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - autoPaginate: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: ''
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - parameters: >-
+        {"invoice":"{{create_invoice.data.id}}","Idempotency-Key":"{{
+        'finalize_invoice_' + idempotencyKey.data }}"}
+    - data: null
+    - specPathOverride: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - workflowActionType: null
+    - requestBodyDynamicStates: >-
+        {"account_tax_ids":false,"application_fee_amount":false,"auto_advance":false,"collection_method":false,"custom_fields":false,"days_until_due":false,"default_payment_method":false,"default_source":false,"default_tax_rates":false,"description":false,"discounts":false,"due_date":false,"expand":false,"footer":false,"metadata":false,"on_behalf_of":false,"payment_settings":false,"statement_descriptor":false,"transfer_data":false}
+    - queryRunTime: null
+    - changesetObject: ''
+    - requestBody: '{"auto_advance":"true"}'
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - specBasePath: https://api.stripe.com/
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - serverVariables: '{}'
+    - enableErrorTransformer: false
+    - autoPaginateLimit: 500
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - parameterDynamicStates: '{"invoice":false,"Stripe-Account":false,"Idempotency-Key":false}'
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '120000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - workflowBlockPluginId: null
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2023-04-26T00:22:10.413Z
+blockData:
+  top: 656
+  left: 5680
+  uuid: cd51e550-c210-46f3-8ebf-9c570ced8d4c
+  comment:
+    body: Finalize invoice - it'll be sent for payment after that.
+    visible: true
+    pluginId: finalize_invoice-comment
+  pluginId: finalize_invoice
+  blockType: default
+  editorType: OpenAPIQuery
+  retryPolicy:
+    numAttempts: 2
+    initialIntervalMs: 1000
+  resourceName: d4fabe38-bed8-415a-8e7d-8a2dcfdede2f
+  responseHeight: 182
+  retryPanelOpen: false
+  responsePanelState: open
+  incomingOnSuccessEdges:
+    - 86274419-a794-4615-aa89-5a9c23eb73be

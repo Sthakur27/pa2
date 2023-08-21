@@ -1,0 +1,133 @@
+id: mergeTempTableIntoMain
+type: datasource
+subtype: SqlQueryUnified
+resourceName: baf420ab-7126-46a1-b825-ef601c001acf
+resourceDisplayName: Billing
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - records: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: |-
+        MERGE billing.dim_invoice_status T
+        USING billing.temp_invoice_status S
+        ON T.ds = S.ds AND T.retool_customer_id = S.retool_customer_id 
+        WHEN NOT MATCHED BY TARGET THEN
+          INSERT ROW
+        WHEN MATCHED THEN
+          UPDATE SET
+            stripe_customer_id = `S`.stripe_customer_id,
+            org_sid = `S`.org_sid,
+            deployment_id = `S`.deployment_id,
+            status = `S`.status,
+            invoice_id = `S`.invoice_id,
+            updated_at = `S`.updated_at,
+            environment = `S`.environment
+          
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - warningCodes: []
+    - data: null
+    - recordId: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - filterBy: ''
+    - requestSentTimestamp: null
+    - databaseHostOverride: ''
+    - metadata: null
+    - workflowActionType: null
+    - editorMode: sql
+    - queryRunTime: null
+    - actionType: ''
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - enableBulkUpdates: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - bulkUpdatePrimaryKey: ''
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - tableName: ''
+    - queryTimeout: '300000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - workflowBlockPluginId: null
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2023-06-12T20:06:16.089Z
+blockData:
+  top: 32
+  left: 2624
+  uuid: ff8e42ca-dfc7-4cc5-a17a-7c6a52f2da8a
+  pluginId: mergeTempTableIntoMain
+  blockType: default
+  dimensions:
+    width: 398
+    height: 385
+  editorType: SqlQueryUnified
+  retryPolicy:
+    numAttempts: 4
+    initialIntervalMs: 1000
+  resourceName: baf420ab-7126-46a1-b825-ef601c001acf
+  retryPanelOpen: false
+  responsePanelState: closed
+  incomingOnSuccessEdges:
+    - 81d3a25c-f3b0-4d69-b1ab-2adeb4493a30

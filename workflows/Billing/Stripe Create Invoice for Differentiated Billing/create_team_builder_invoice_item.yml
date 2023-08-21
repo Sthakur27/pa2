@@ -1,0 +1,124 @@
+id: create_team_builder_invoice_item
+type: datasource
+subtype: OpenAPIQuery
+resourceName: d4fabe38-bed8-415a-8e7d-8a2dcfdede2f
+resourceDisplayName: Retool Stripe Account
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - method: post
+    - operationId: PostInvoiceitems
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - server: https://api.stripe.com/
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - path: /v1/invoiceitems
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - autoPaginate: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: ''
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - parameters: >-
+        {"Idempotency-Key":"{{ 'create_team_builder_invoice_item_' +
+        idempotencyKey.data }}"}
+    - data: null
+    - specPathOverride: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - workflowActionType: null
+    - requestBodyDynamicStates: >-
+        {"amount":false,"currency":false,"customer":false,"description":false,"discountable":false,"discounts":true,"expand":false,"invoice":false,"metadata":false,"period":false,"price":false,"price_data":false,"quantity":false,"subscription":false,"tax_rates":false,"unit_amount":false,"unit_amount_decimal":false}
+    - queryRunTime: null
+    - changesetObject: ''
+    - requestBody: >-
+        {"description":"Standard user on Team plan","period":{"start":"{{
+        params.data.billing_period_start }}","end":"{{
+        params.data.billing_period_end }}"},"customer":"{{
+        params.data.stripe_customer_id }}","price":"{{
+        params.data.team_builder_price_id }}","quantity":"{{
+        params.data.invoice_builders}}","discounts":"{{coupon_for_team_prorate.data
+        }}","currency":"{{params.data.currency}}"}
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - specBasePath: https://api.stripe.com/
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - serverVariables: '{}'
+    - enableErrorTransformer: false
+    - autoPaginateLimit: 500
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - parameterDynamicStates: '{"Stripe-Account":false,"Idempotency-Key":false}'
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '120000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - workflowBlockPluginId: null
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2023-04-25T23:58:49.163Z
+blockData:
+  top: 48
+  left: 4144
+  uuid: 4fc836f5-75b6-4d9d-9cf4-231c46cbd140
+  pluginId: create_team_builder_invoice_item
+  blockType: default
+  editorType: OpenAPIQuery
+  isMinimized: true
+  retryPolicy:
+    numAttempts: 2
+    initialIntervalMs: 1000
+  resourceName: d4fabe38-bed8-415a-8e7d-8a2dcfdede2f
+  incomingPorts: []
+  responseHeight: 182
+  retryPanelOpen: false
+  responsePanelState: open
+  incomingOnSuccessEdges:
+    - 3a10c898-3b05-4d23-a127-3ef504f94c3a

@@ -1,0 +1,115 @@
+id: checkIf
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: |-
+        if (readRecentlyUpdatedRows.data.length > 0) {
+          executePathAtMostOnce('0')
+        }
+        else { executePathAtMostOnce('1') }
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - _additionalScope: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - workflowActionType: null
+    - editorMode: sql
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
+    - events: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - workflowBlockPluginId: null
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2023-08-05T00:43:08.266Z
+blockData:
+  top: 496
+  left: 1600
+  uuid: 0c4b75f8-5afd-4399-9052-01719d4b5ae9
+  options:
+    conditions:
+      - id: 44bb3b32-fceb-4113-be79-39df50ee9521
+        type: if
+        statement: readRecentlyUpdatedRows.data.length > 0
+        outgoingPortId: 83541e80-82ae-4f2a-a717-5cebde421e7d
+      - id: 5d5c50da-bd8a-4b31-a1e2-4c41e049a67b
+        type: else
+        statement: ''
+        outgoingPortId: 6e09626f-d053-4788-ac74-f0cf2726e5b7
+  pluginId: checkIf
+  blockType: conditional
+  editorType: JavascriptQuery
+  isMinimized: false
+  resourceName: JavascriptQuery
+  incomingPorts: []
+  outgoingPorts:
+    - id: 83541e80-82ae-4f2a-a717-5cebde421e7d
+      name: '0'
+      type: conditional
+    - id: 6e09626f-d053-4788-ac74-f0cf2726e5b7
+      name: '1'
+      type: conditional
+  retryPanelOpen: false
+  responsePanelState: open
+  incomingOnSuccessEdges:
+    - 64925771-c155-4f31-adc5-c3febdd08ec5

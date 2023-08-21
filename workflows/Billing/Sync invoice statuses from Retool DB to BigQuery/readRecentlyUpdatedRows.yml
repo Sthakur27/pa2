@@ -1,0 +1,122 @@
+id: readRecentlyUpdatedRows
+type: datasource
+subtype: SqlQueryUnified
+resourceName: 4465247e-0868-4261-ae6b-789273d5a26a
+resourceDisplayName: retool_db
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - records: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: >-
+        select * from  dim_invoice_status where updated_at > CURRENT_TIMESTAMP -
+        (INTERVAL '2' hour)
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - warningCodes: []
+    - data: null
+    - recordId: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - filterBy: ''
+    - requestSentTimestamp: null
+    - databaseHostOverride: ''
+    - metadata: null
+    - workflowActionType: null
+    - editorMode: sql
+    - queryRunTime: null
+    - actionType: ''
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - enableBulkUpdates: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - bulkUpdatePrimaryKey: ''
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - tableName: dim_invoice_status
+    - queryTimeout: '300000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - workflowBlockPluginId: null
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2023-06-12T19:39:39.374Z
+blockData:
+  top: 32
+  left: 480
+  uuid: b0637fc0-267d-4e01-83ab-f6e521637744
+  pluginId: readRecentlyUpdatedRows
+  blockType: default
+  dimensions:
+    width: 590
+    height: 342
+  editorType: SqlQueryUnified
+  retryPolicy:
+    numAttempts: 4
+    initialIntervalMs: 1000
+    maximumIntervalMs: 120000
+    backoffCoefficient: 2
+  resourceName: 4465247e-0868-4261-ae6b-789273d5a26a
+  retryPanelOpen: false
+  responsePanelState: closed
+  incomingOnSuccessEdges:
+    - 7c6cc02c-adf8-4e2c-9865-24c83cc20b45

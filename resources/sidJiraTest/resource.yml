@@ -1,0 +1,57 @@
+databaseName: null
+databasePassword: ''
+databaseUsername: null
+description: null
+dynamicallyQueryable: false
+editPrivilege: null
+environment: production
+host: null
+options:
+  amazon_secret_access_key: ''
+  api_key: ''
+  application_key: ''
+  athena_secret_access_key: ''
+  auth0_access_token: ''
+  auth0_clientSecret: ''
+  authentication: oauth2
+  aws_secret_access_key: ''
+  basic_password: ''
+  ca_cert: ''
+  client_cert: ''
+  client_cert_and_key: ''
+  client_key: ''
+  connectionString: ''
+  defaultServerUrl: https://{domain}
+  defaultServerVariables:
+    - - domain
+      - your-domain.atlassian.net
+  dynamo_secret_access_key: ''
+  googleToken: ''
+  oauth1_consumer_secret: ''
+  oauth2_access_token: ''
+  oauth2_access_token_url: https://auth.atlassian.com/oauth/token
+  oauth2_audience: api.atlassian.com
+  oauth2_auth_url: https://auth.atlassian.com/authorize
+  oauth2_callback_url: '{{ env.BASE_DOMAIN }}/oauth/user/oauthcallback'
+  oauth2_client_id: asdf
+  oauth2_client_secret: ''
+  oauth2_refresh_token: ''
+  oauth2_scope: >-
+    read:jira-user read:jira-work manage:jira-project manage:jira-configuration
+    write:jira-work manage:jira-data-provider offline_access
+  oauth2_share_user_credentials: false
+  password: ''
+  privateKey: ''
+  privateKeyPass: ''
+  s3_secret_access_key_id: ''
+  serviceAccountKey: ''
+  spec: >-
+    https://specs.tryretool.com/specs/atlassian/jira/3.0.1/1001.0.0.1-SNAPSHOT.json
+  sshPassword: ''
+  user_auth_key: ''
+outboundRegion: null
+port: null
+ssl: null
+type: jira
+uuid: 9d1bfa19-e36b-419c-aedf-47e76f339d25
+version: 1.0.0

@@ -1,0 +1,15 @@
+<PlaygroundQuery
+  id="uuidswapqlq"
+  adhocResourceType={null}
+  data={null}
+  resourceType="restapi"
+>
+  <RESTQuery
+    allowedGroups={[]}
+    events={[]}
+    importedQueryDefaults={{}}
+    importedQueryInputs={{}}
+    privateParams={[]}
+    watchedParams={[]}
+  />
+</PlaygroundQuery>

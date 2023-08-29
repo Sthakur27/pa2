@@ -5,7 +5,7 @@
     resourceName="5519ac7b-7ff2-44ab-941b-e539caa796cc"
   />
   <RESTQuery
-    id="query2"
+    id="query3"
     isImported={true}
     playgroundQueryId={5}
     playgroundQueryName="uuidswapqlq"

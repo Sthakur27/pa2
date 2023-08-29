@@ -1,0 +1,17 @@
+<GlobalFunctions>
+  <RESTQuery
+    id="query1"
+    resourceDisplayName="uuidswapresource"
+    resourceName="5519ac7b-7ff2-44ab-941b-e539caa796cc"
+    resourceTypeOverride=""
+  />
+  <RESTQuery
+    id="query2"
+    isImported={true}
+    playgroundQueryId={5}
+    playgroundQueryName="uuidswapqlq"
+    playgroundQueryUuid="199434f7-bf0a-4cfa-b033-7d9da2637f14"
+    resourceDisplayName="uuidswapresource"
+    resourceName="5519ac7b-7ff2-44ab-941b-e539caa796cc"
+  />
+</GlobalFunctions>

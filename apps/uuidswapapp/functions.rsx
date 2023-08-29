@@ -6,7 +6,7 @@
     resourceTypeOverride=""
   />
   <RESTQuery
-    id="query3"
+    id="query2"
     isImported={true}
     playgroundQueryId={5}
     playgroundQueryName="uuidswapqlq"

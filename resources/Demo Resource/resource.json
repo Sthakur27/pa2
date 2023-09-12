@@ -1,6 +1,6 @@
 {
   "type": "postgresql",
-  "host": "https://example.com",
+  "host": "https://example2.com",
   "port": "5432",
   "databaseName": "",
   "databaseUsername": "",

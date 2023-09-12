@@ -1,7 +1,7 @@
 {
   "type": "postgresql",
   "host": "https://example.com",
-  "port": "5432",
+  "port": "5431",
   "databaseName": "",
   "databaseUsername": "",
   "databasePassword": "",
@@ -12,16 +12,14 @@
   "options": {
     "sshHost": "",
     "version": "SqlQueryUnified",
-    "sshPassword": "",
     "sshUsername": "",
     "authentication": "user_password",
-    "connectionString": "",
     "queryEditorModes": { "allowGuiMode": true, "allowSqlMode": true },
     "sshTunnelEnabled": false,
     "sshPrivateKeyName": ""
   },
   "environment": "production",
   "dynamicallyQueryable": false,
-  "uuid": "c172e1e3-13f1-4cd8-841b-8f33c21a0f46",
+  "uuid": "28045091-19c7-441a-84db-cc309e3a51fc",
   "toolscriptVersion": "1.0.0"
 }

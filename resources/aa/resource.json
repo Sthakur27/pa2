@@ -25,7 +25,7 @@
     "oauth2_auth_url": "a",
     "cookiesToForward": [],
     "oauth1_token_key": "",
-    "oauth2_client_id": "a",
+    "oauth2_client_id": "aasdf",
     "forwardAllCookies": false,
     "auth0_clientSecret": "",
     "extraBodyKeyValues": [["", ""]],

@@ -1,0 +1,41 @@
+id: keyValue1
+type: widget
+subtype: RNKeyValueWidget
+template:
+  ordered:
+    - showSeparator: 'true'
+    - data: '{{ collectionView1.selectedItem }}'
+    - rowVisibility:
+        ordered:
+          - id: false
+          - name: false
+          - email: true
+          - sales: true
+          - image: false
+    - header: '{{ collectionView1.selectedItem.name }}'
+    - _rowKeysFormatted:
+        ordered:
+          - email: 'Email:'
+          - sales: 'Sales:'
+    - valueHorizontalAlignment: left
+    - allowTextWrapping: 'true'
+    - valueWidth: 75%
+    - rows:
+        - id
+        - name
+        - email
+        - sales
+        - image
+    - _rowValuesFormatted:
+        ordered: []
+    - direction: horizontal
+position2:
+  position2:
+    height: 0
+    width: 0
+mobileAppPosition:
+  object:
+    ordinal: 1
+createdAt: 2023-03-01T00:15:52.197Z
+screen: detailsScreen
+blockData: {}

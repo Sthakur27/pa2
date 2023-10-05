@@ -1,0 +1,17 @@
+id: detailsScreen
+type: screen
+subtype: Screen
+template:
+  ordered:
+    - title: Details
+    - headerLeftActions: []
+    - headerRightActions: []
+    - gap: 16
+    - padding:
+        ordered:
+          - top: 0
+          - bottom: 0
+          - left: 12
+          - right: 12
+createdAt: 2023-03-01T00:15:52.197Z
+blockData: {}

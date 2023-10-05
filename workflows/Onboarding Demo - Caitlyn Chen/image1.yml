@@ -1,0 +1,19 @@
+id: image1
+type: widget
+subtype: RNImageWidget
+template:
+  ordered:
+    - src: '{{collectionView1.selectedItem.image}}'
+    - ratio: 1
+    - mode: cover
+    - cornerType: square
+position2:
+  position2:
+    height: 0
+    width: 0
+mobileAppPosition:
+  object:
+    ordinal: 0
+createdAt: 2023-03-01T00:15:52.197Z
+screen: detailsScreen
+blockData: {}

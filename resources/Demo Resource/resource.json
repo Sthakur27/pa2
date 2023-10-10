@@ -12,10 +12,8 @@
   "options": {
     "sshHost": "",
     "version": "SqlQueryUnified",
-    "sshPassword": "",
     "sshUsername": "",
     "authentication": "user_password",
-    "connectionString": "",
     "queryEditorModes": { "allowGuiMode": true, "allowSqlMode": true },
     "sshTunnelEnabled": false,
     "sshPrivateKeyName": ""

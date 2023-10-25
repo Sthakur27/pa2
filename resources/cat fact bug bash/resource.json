@@ -10,7 +10,7 @@
   "editPrivilege": null,
   "options": {
     "baseURL": "https://catfact.ninja/fact",
-    "headers": [["", ""]],
+    "headers": [["potato", "pie"]],
     "urlparams": [["", ""]],
     "auth0_domain": "",
     "oauth2_scope": "",

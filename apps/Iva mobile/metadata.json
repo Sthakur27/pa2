@@ -1,0 +1,13 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "1ef0bbb4-7386-11ee-b97b-bbd8bbdb75bc",
+  "appTemplate": {
+    "appThemeId": 8,
+    "rootScreen": "tabscreen",
+    "isMobileApp": true,
+    "shortlink": false,
+    "version": "3.18.1",
+    "multiScreenMobileApp": true
+  }
+}

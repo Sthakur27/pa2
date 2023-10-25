@@ -1,11 +1,8 @@
 <GlobalFunctions>
-  <RESTQuery
+  <SqlQueryUnified
     id="query1"
-    isImported={true}
-    playgroundQueryName="res to protect"
-    playgroundQueryUuid="bf798a21-902b-403e-942e-660f8e0d7694"
-    resourceDisplayName="uuidswapresource"
-    resourceName="5519ac7b-7ff2-44ab-941b-e539caa796cc"
-    retoolVersion="3.18.1"
+    resourceDisplayName="asas/d2"
+    resourceName="d9344352-e19d-4dcf-b612-3ea524d43ac5"
+    resourceTypeOverride=""
   />
 </GlobalFunctions>

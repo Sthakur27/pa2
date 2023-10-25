@@ -1,0 +1,16 @@
+<PlaygroundQuery
+  id="moop"
+  adhocResourceType={null}
+  data={null}
+  resourceType="restapi"
+>
+  <RESTQuery
+    allowedGroupIds={[]}
+    allowedGroups={[]}
+    events={[]}
+    importedQueryDefaults={{}}
+    importedQueryInputs={{}}
+    privateParams={[]}
+    watchedParams={[]}
+  />
+</PlaygroundQuery>

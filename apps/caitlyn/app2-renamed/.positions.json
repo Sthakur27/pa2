@@ -3,5 +3,11 @@
     "row": 3.8,
     "col": 1,
     "height": 1
+  },
+  "unprotectedMod1": {
+    "row": 11.6,
+    "col": 1,
+    "height": 2.4,
+    "width": 11
   }
 }

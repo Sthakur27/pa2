@@ -17,9 +17,6 @@
     transformer="// Query results are available as the `data` variable
 return formatDataAsArray(data)"
     warningCodes={[]}
-    workflowActionType={null}
-    workflowBlockPluginId={null}
-    workflowRunId={null}
   />
   <SqlQueryUnified
     id="query2"
@@ -29,9 +26,6 @@ return formatDataAsArray(data)"
     transformer="// Query results are available as the `data` variable
 return formatDataAsArray(data)"
     warningCodes={[]}
-    workflowActionType={null}
-    workflowBlockPluginId={null}
-    workflowRunId={null}
   />
   <SqlQueryUnified
     id="query3"
@@ -39,8 +33,5 @@ return formatDataAsArray(data)"
     resourceName="f470aa80-0f92-4fc3-81e0-1f36644087a7"
     transformer="// Query results are available as the `data` variable
 return formatDataAsArray(data)"
-    workflowActionType={null}
-    workflowBlockPluginId={null}
-    workflowRunId={null}
   />
 </GlobalFunctions>

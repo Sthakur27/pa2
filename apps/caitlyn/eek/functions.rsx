@@ -1,0 +1,15 @@
+<GlobalFunctions>
+  <SqlQueryUnified
+    id="query1"
+    resourceDisplayName="a"
+    resourceName="f470aa80-0f92-4fc3-81e0-1f36644087a7"
+  />
+  <RESTQuery
+    id="query2"
+    isImported={true}
+    playgroundQueryName="moop"
+    playgroundQueryUuid="5c0e1272-d372-49a0-a8c8-adf46dd8f8c9"
+    resourceDisplayName="aa"
+    resourceName="cce3c254-322d-4422-a87e-a884c21ef335"
+  />
+</GlobalFunctions>

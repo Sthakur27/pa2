@@ -3,6 +3,8 @@
   "version": "43.0.9",
   "pageUuid": "2f4948bc-7383-11ee-b8bf-b7abf6f8967b",
   "appTemplate": {
+    "appThemeId": 3,
+    "appThemeName": "Iva theme",
     "shortlink": false,
     "version": "3.18.1"
   }

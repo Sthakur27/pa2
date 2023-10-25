@@ -1,0 +1,11 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "0effe170-7387-11ee-baae-5b25b5b8cb59",
+  "appTemplate": {
+    "appThemeId": 9,
+    "appThemeName": "x-theme",
+    "shortlink": false,
+    "version": "3.18.1"
+  }
+}

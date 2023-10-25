@@ -9,7 +9,7 @@
   "ssl": null,
   "editPrivilege": null,
   "options": {
-    "baseURL": "",
+    "baseURL": "https://test",
     "headers": [["", ""]],
     "urlparams": [["", ""]],
     "auth0_domain": "",

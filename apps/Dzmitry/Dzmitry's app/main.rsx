@@ -10,6 +10,7 @@
   >
     <Module
       id="fintechNavBar1"
+      appUUID=""
       name="Fintech Nav Bar"
       pageUuid="16eff5d3-aa1e-4279-9e3a-20b83803941d"
     />
@@ -163,5 +164,10 @@
         />
       </ToolbarButton>
     </Table>
+    <Module
+      id="dzmitrysModule1"
+      name="Dzmitry's module"
+      pageUuid="2261cc76-7385-11ee-889b-6304cb91032c"
+    />
   </Frame>
 </App>

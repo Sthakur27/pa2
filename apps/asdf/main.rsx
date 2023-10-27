@@ -159,5 +159,10 @@
         />
       </ToolbarButton>
     </Table>
+    <Module
+      id="asdf1"
+      name="asdf3"
+      pageUuid="0b0133f4-745d-11ee-8c74-7759a0505b36"
+    />
   </Frame>
 </App>

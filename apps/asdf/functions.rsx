@@ -7,6 +7,7 @@
     transformer="// type your code here
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
+    version={1}
     workflowName={null}
   />
 </GlobalFunctions>

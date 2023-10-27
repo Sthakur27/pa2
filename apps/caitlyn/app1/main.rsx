@@ -7,5 +7,11 @@
     paddingType="normal"
     sticky={null}
     type="main"
-  />
+  >
+    <Module
+      id="fake1"
+      name="fake"
+      pageUuid="3086bd74-7462-11ee-9d4d-8f811647dbf9"
+    />
+  </Frame>
 </App>

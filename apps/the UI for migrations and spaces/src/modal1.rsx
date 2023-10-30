@@ -1,9 +1,8 @@
 <Modal
   id="modal1"
-  buttonText="Open Modal"
+  buttonText="Export Elements"
   modalHeightType="auto"
-  modalWidth="6
-0%"
+  modalWidth="60%"
 >
   <Text
     id="text1"

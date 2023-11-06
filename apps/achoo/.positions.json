@@ -18,5 +18,10 @@
     "row": 4.2,
     "col": 3,
     "height": 1
+  },
+  "button5": {
+    "row": 8,
+    "col": 5,
+    "height": 1
   }
 }

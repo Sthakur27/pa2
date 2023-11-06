@@ -11,5 +11,6 @@
     <Button id="button4" styleVariant="solid" text="Button" />
     <Button id="button1" styleVariant="solid" text="modifyme" />
     <Button id="button3" styleVariant="solid" text="delme" />
+    <Button id="button5" styleVariant="solid" text="Button" />
   </Frame>
 </App>

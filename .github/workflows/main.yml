@@ -1,0 +1,40 @@
+name: Deploy on Pull Request
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Get commit SHA
+      id: vars
+      run: echo "::set-output name=sha::$(git rev-parse HEAD)"
+
+    - name: Deploy and check response
+      run: |
+        response=$(curl -s -X POST \
+          -H "Authorization: Bearer retool_01h9j08e3ryngvj4rt352vv935" \
+          -H "Content-Type: application/json" \
+          -d '{"deployParams": {"commitSha": "${{ steps.vars.outputs.sha }}"} }' \
+          "https://sid.retool.dev/api/v2/source_control/deploy")
+        
+        echo "Response: $response"
+        
+        success=$(echo $response | jq '.data.success')
+        message=$(echo $response | jq -r '.data.message')
+        
+        echo "Success: $success"
+        if [ "$success" != "true" ]; then
+          echo -e "Error message: $message"
+          exit 1
+        fi
+
+    - name: Success
+      run: echo "Deployment successful"
+

@@ -1,0 +1,8 @@
+version: 43.0.9
+pageUuid: 6365919e-95e1-11ed-832a-4ff68de1494f
+appTemplate:
+  queryStatusVisibility: false
+  rootScreen: null
+  version: 2.108.0
+  markdownLinkBehavior: auto
+  experimentalDataTabEnabled: true

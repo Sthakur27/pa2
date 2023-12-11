@@ -1,4 +1,4 @@
-<App>
+App>
   <Include src="./functions.rsx" />
   <Frame
     id="$main"

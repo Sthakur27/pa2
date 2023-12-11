@@ -1,0 +1,129 @@
+id: create_invoice
+type: datasource
+subtype: RESTQuery
+resourceName: 59decea6-f606-40b7-871a-dcd957de5901
+resourceDisplayName: Differentiated Billing Stripe API
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: >-
+        [{"key":"customer","value":"{{params.data.stripe_customer_id}}"},{"key":"currency","value":"{{params.data.currency}}"},{"key":"auto_advance","value":"true"},{"key":"description","value":"Monthly
+        subscription
+        charge"},{"key":"collection_method","value":"charge_automatically"},{"key":"automatic_tax[enabled]","value":"{{
+        !params.data.disable_automatic_tax
+        }}"},{"key":"metadata[next_billing_period_start]","value":"{{params.data.next_billing_period_start}}"},{"key":"metadata[next_billing_period_end]","value":"{{params.data.next_billing_period_end}}"}]
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: >-
+        [{"key":"Idempotency-Key","value":"{{ 'create_invoice_' +
+        idempotencyKey.data }}"}]
+    - workflowRunId: null
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: invoices
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - cookies: ''
+    - metadata: null
+    - workflowActionType: null
+    - editorMode: sql
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '120000'
+    - workflowId: null
+    - requireConfirmation: false
+    - type: POST
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - workflowBlockPluginId: null
+    - bodyType: form
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2023-05-23T00:03:43.577Z
+blockData:
+  top: 656
+  left: 4656
+  uuid: 20e5efcb-014b-414a-9b33-3dedbcd6a9c8
+  comment:
+    body: >-
+      Now that we've created all invoice items, let's create invoice draft.
+
+
+      We use REST API resource here because `currency` and `automatic_tax`
+      parameters are not supported in our OpenAPI Stripe resource.
+    visible: true
+    pluginId: create_invoice-comment
+  pluginId: create_invoice
+  blockType: default
+  editorType: RESTQuery
+  retryPolicy:
+    numAttempts: 2
+    initialIntervalMs: 1000
+  resourceName: 59decea6-f606-40b7-871a-dcd957de5901
+  responseHeight: 182
+  retryPanelOpen: false
+  responsePanelState: open
+  incomingOnSuccessEdges:
+    - 4fc836f5-75b6-4d9d-9cf4-231c46cbd140
+    - dca1f31d-4ee2-4dd2-91d6-e261a41ba3b9
+    - 4d851157-5ef8-4c92-b83f-467ceccb488d
+    - a97ff53c-bc3e-4d44-bac8-693d96e5af89
+    - 56f8ad16-ea5d-4475-9f20-d9520603e4fe

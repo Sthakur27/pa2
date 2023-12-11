@@ -1,0 +1,117 @@
+id: if_has_team_plan_charges
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: |
+        if (params.data.prorate_team > 0) {
+          executePathAtMostOnce('0')
+        }
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - _additionalScope: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - workflowActionType: null
+    - editorMode: sql
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '120000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - workflowBlockPluginId: null
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2023-05-18T16:50:54.401Z
+blockData:
+  top: 48
+  left: 3120
+  uuid: c7fe1142-d8d1-441e-bb37-90fb18888a43
+  comment:
+    body: Check if the customer has spent some time on Team plan
+    visible: true
+    pluginId: if_has_team_plan_charges-comment
+  options:
+    conditions:
+      - id: 5db7ef51-a182-4a98-bf02-573494b9ed8f
+        type: if
+        statement: params.data.prorate_team > 0
+        outgoingPortId: 81afc991-d20d-4130-8660-0654d564e905
+  pluginId: if_has_team_plan_charges
+  blockType: conditional
+  editorType: JavascriptQuery
+  isMinimized: false
+  resourceName: JavascriptQuery
+  incomingPorts:
+    - portId: 62640781-5be1-45d7-9262-8fc088ef0372
+      blockId: 7bd3e64b-9e20-49ce-94d7-d37f0d3bd067
+  outgoingPorts:
+    - id: 81afc991-d20d-4130-8660-0654d564e905
+      name: '0'
+      type: conditional
+  responseHeight: 96
+  retryPanelOpen: false
+  responsePanelState: open
+  incomingOnSuccessEdges: []

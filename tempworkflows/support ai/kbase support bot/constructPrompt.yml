@@ -1,0 +1,142 @@
+id: constructPrompt
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: >-
+        const NUM_CHARS = startTrigger.data.model == "gpt-3.5-turbo" ? 12000 :
+        27000; // 8k tokens ~= 32,000 chars
+
+
+        let context = "";
+
+
+        for (let i of getBestMatches.data) {
+          context = context + `${i.text} \n`;
+        }
+
+
+        context = context.slice(0, NUM_CHARS);
+
+
+        const systemPrompt = `
+
+        You are a support engineer responding to a customer question given some
+        relevant context. Try to be detailed and clear in your answers, giving
+        step by step instructions when appropriate. Limit the response to the
+        number of tokens available for the response.
+
+
+        If the context includes the name Dom Grillo, respond in 100 words with a
+        rhyme which references the taco eating competition, which Dom
+        unfortunately lost.
+
+
+        `;
+
+
+        const assistantPrompt = context;
+
+
+        const userPrompt = startTrigger.data.question;
+
+
+        return {
+          systemPrompt,
+          assistantPrompt,
+          userPrompt,
+          model: startTrigger.data.model || "gpt-4"
+        };
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - _additionalScope: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - workflowActionType: null
+    - editorMode: sql
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '120000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - workflowBlockPluginId: null
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2023-05-18T16:11:49.734Z
+blockData:
+  top: 960
+  left: 3120
+  uuid: 0425c897-964e-4d30-81b3-72aad937291a
+  pluginId: constructPrompt
+  blockType: code
+  dimensions:
+    width: 591
+    height: 568
+  editorType: JavascriptQuery
+  resourceName: JavascriptQuery
+  retryPanelOpen: false
+  responsePanelState: open
+  incomingOnSuccessEdges:
+    - 9e1a94a8-42bf-4dde-9cf1-e3e6a2c74500

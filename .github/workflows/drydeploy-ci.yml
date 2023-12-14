@@ -1,0 +1,33 @@
+name: Custom CI Test
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Get commit SHA
+      run: echo "COMMIT_SHA=${{ github.event.pull_request.head.sha }}" >> $GITHUB_ENV
+
+    - name: Run custom test
+      run: |
+        response=$(curl -X POST -H "Content-Type: application/json" \
+          -H "Authorization: Bearer retool_01h9j08e3ryngvj4rt352vv935" \
+          -d '{"deployParams": {"commitSha": "'$COMMIT_SHA'"}}' \
+          https://sidd.retool.dev/api/v2/source_control/test_deploy)
+        echo "Response: $response"
+      env:
+        COMMIT_SHA: ${{ env.COMMIT_SHA }}
+
+    - name: Check test result
+      run: |
+        if [[ $(echo $response | jq '.data.success') != "true" ]]; then
+          echo "Test failed"
+          exit 1
+        fi
+

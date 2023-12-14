@@ -1,0 +1,19 @@
+{
+  "button1": {
+    "row": 12.6,
+    "col": 3,
+    "height": 1,
+    "width": 1
+  },
+  "button2": {
+    "row": 6,
+    "col": 4,
+    "height": 1,
+    "width": 1
+  },
+  "modal1": {
+    "row": 11.4,
+    "col": 4,
+    "height": 1
+  }
+}

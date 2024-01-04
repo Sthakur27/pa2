@@ -2,7 +2,7 @@ name: Deploy Workflow
 
 on:
   pull_request:
-    branches: [ main ]  # Trigger the workflow on pull requests targeting the main branch
+    types: [opened, synchronize, reopened]
 
 jobs:
   deploy:

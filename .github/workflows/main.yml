@@ -17,8 +17,8 @@ jobs:
           export COMMIT_SHA="88c5fbd12b7d064a8e9c8dcfbe778e795f3023df"
           echo "Deploying commit SHA $COMMIT_SHA on https://a02e-50-217-234-18.ngrok-free.app/api/v2/source_control/test_deploy"
           response=$(curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer ${{ secrets.RETOOL_DRY_DEPLOY_API_KEY }}" -d "{\"deploy_params\": {\"commit_sha\": \"$COMMIT_SHA\"}}" https://a02e-50-217-234-18.ngrok-free.app/api/v2/source_control/test_deploy)
-          echo "API Response:
-          echo "$response"s
+          echo "API Response:"
+          echo "$response"
           if [[ $(echo $response | jq '.data.success') != "true" ]]; then
             echo "Test failed"
             exit 1

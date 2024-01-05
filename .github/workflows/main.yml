@@ -1,40 +1,25 @@
-name: Deploy on Pull Request
+name: Deploy Workflow
 
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, synchronize, reopened]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Get commit SHA
-      id: vars
-      run: echo "::set-output name=sha::$(git rev-parse HEAD)"
-
-    - name: Deploy and check response
-      run: |
-        response=$(curl -s -X POST \
-          -H "Authorization: Bearer retool_01h9j08e3ryngvj4rt352vv935" \
-          -H "Content-Type: application/json" \
-          -d '{"deployParams": {"commitSha": "${{ steps.vars.outputs.sha }}"} }' \
-          "https://sid.retool.dev/api/v2/source_control/deploy")
-        
-        echo "Response: $response"
-        
-        success=$(echo $response | jq '.data.success')
-        message=$(echo $response | jq -r '.data.message')
-        
-        echo "Success: $success"
-        if [ "$success" != "true" ]; then
-          echo -e "Error message: $message"
-          exit 1
-        fi
-
-    - name: Success
-      run: echo "Deployment successful"
-
+      - name: Deploy Commit
+        run: |
+          COMMIT_SHA="${{ github.event.pull_request.head.sha }}"
+          echo "Deploying commit SHA $COMMIT_SHA on https://a02e-50-217-234-18.ngrok-free.app/api/v2/source_control/test_deploy"
+          response=$(curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer ${{ secrets.RETOOL_DRY_DEPLOY_API_KEY }}" -d "{\"deploy_params\": {\"commit_sha\": \"$COMMIT_SHA\"}}" https://a02e-50-217-234-18.ngrok-free.app/api/v2/source_control/test_deploy)
+          echo "API Response:"
+          echo "$response"
+          if [[ $(echo $response | jq '.data.success') != "true" ]]; then
+            echo "Test failed"
+            exit 1
+          fi

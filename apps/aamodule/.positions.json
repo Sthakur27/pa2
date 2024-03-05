@@ -11,5 +11,8 @@
     "col": 5,
     "height": 1
   },
-  "moduleContainer": { "height": 12, "width": 12 }
+  "moduleContainer": {
+    "height": 12,
+    "width": 12
+  }
 }

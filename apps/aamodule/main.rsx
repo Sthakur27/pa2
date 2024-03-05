@@ -3,58 +3,26 @@
     id="$main"
     isHiddenOnDesktop={false}
     isHiddenOnMobile={false}
+    padding="8px 12px"
     sticky={false}
     type="main"
   >
     <ModuleContainerWidget
       id="moduleContainer"
       backgroundColor="white"
-      disabled=""
-      heightType="fixed"
       isGlobalWidgetContainer={true}
-      overflowType="hidden"
-      showBorder={true}
-      showDropShadow={true}
-      spinWhenChildrenAreFetching={true}
-      title=""
     >
       <Button
         id="button1"
         _disclosedFields={{ array: [] }}
-        clickable={false}
-        disabled={false}
-        hidden={false}
-        horizontalAlign="stretch"
-        iconAfter=""
-        iconBefore=""
-        loaderPosition="auto"
-        loading={false}
-        maintainSpaceWhenHidden={false}
-        showInEditor={false}
         styleVariant="solid"
-        submit={false}
-        submitTargetId={null}
         text="Button"
-        tooltipText=""
       />
       <Button
         id="button2"
         _disclosedFields={{ array: [] }}
-        clickable={false}
-        disabled={false}
-        hidden={false}
-        horizontalAlign="stretch"
-        iconAfter=""
-        iconBefore=""
-        loaderPosition="auto"
-        loading={false}
-        maintainSpaceWhenHidden={false}
-        showInEditor={false}
         styleVariant="solid"
-        submit={false}
-        submitTargetId={null}
         text="Button"
-        tooltipText=""
       />
     </ModuleContainerWidget>
   </Frame>

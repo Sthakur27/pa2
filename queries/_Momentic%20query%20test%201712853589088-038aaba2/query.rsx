@@ -11,6 +11,7 @@
     importedQueryDefaults={{}}
     importedQueryInputs={{}}
     privateParams={[]}
+    query="https://jsonplaceholder.typicode.com/todos/1"
     queryTimeout="100000"
     retoolVersion="3.44.0"
     watchedParams={[]}
